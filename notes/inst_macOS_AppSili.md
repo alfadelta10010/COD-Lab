@@ -10,13 +10,11 @@ In case of mistakes, reach out to [alfadelta10010](https://wa.me/919967058974)
 
 ### Prerequisites
 - GitHub Account
-- For MacOS (M1/Intel):
-	- Follow the instructions given below, in case of Linux/MacOS differences, have marked the same
-	- Install Developer tool + Brew package manager by running the following
+- Install Developer tool + Brew package manager by running the following
 ```bash
 sudo xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install wget 
+brew install wget
 ```
 
 ### Installation steps
