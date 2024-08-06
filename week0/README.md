@@ -13,5 +13,6 @@
 
 - Save it as `<Your_SRN>.md` and add it to the correct folder for your section, `secA` or `secB`
 - **Note**: This is the only assignment you will open a PR for, not for any following assignments.
+- Fill [the form](https://forms.gle/qiMURqn7wXYeuha99) after finishing the assignment
 
 :warning: **Deadline**: 11:59 AM, Saturday, 10th August, 2024
