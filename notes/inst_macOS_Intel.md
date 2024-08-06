@@ -40,6 +40,7 @@ sudo make install
 ##### Spike
 3. Again, go to `/tmp`, we're building `spike`, the [RISC-V ISA simulator](https://github.com/riscv-software-src/riscv-isa-sim)
 ```bash
+cd /tmp
 git clone https://github.com/riscv-software-src/riscv-isa-sim
 cd riscv-isa-sim
 mkdir build
