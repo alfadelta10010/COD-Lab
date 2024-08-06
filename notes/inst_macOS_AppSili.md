@@ -16,7 +16,7 @@ In case of mistakes, reach out to [alfadelta10010](https://wa.me/919967058974)
 ```bash
 sudo xcode-select --install
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install wget dtc 
+brew install wget 
 ```
 
 ### Installation steps
