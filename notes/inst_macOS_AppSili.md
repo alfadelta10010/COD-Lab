@@ -9,7 +9,6 @@ In case of mistakes, reach out to [alfadelta10010](https://wa.me/919967058974)
 - [RIPES](inst_macOS_AppSili.md#RIPES)
 
 ### Prerequisites
-- GitHub Account
 - Install Developer tool + Brew package manager by running the following
 ```bash
 sudo xcode-select --install
