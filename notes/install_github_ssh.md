@@ -7,6 +7,10 @@ git config --global user.email "Your Email"
 git config --global init.defaultBranch main
 git config --global commit.gpgsign true
 ```
+> :warning: In case you have "GPG" errors while creating commits, then run the following command:
+```
+git config --global commit.gpgsign false
+```
 
 - If you have set up SSH keys already, skip forward.
   Check if you have pre-existing SSH keys:
@@ -51,7 +55,3 @@ cat ~/.ssh/id_ed25519.pub
 
 - Congratulations, you have added your SSH key to GitHub
 
-> :warning: In case you have "GPG" errors while creating commits, then run the following command:
-```
-git config --global commit.gpgsign false
-```
