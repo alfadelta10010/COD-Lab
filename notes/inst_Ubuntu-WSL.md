@@ -20,7 +20,7 @@ wsl --install -d Ubuntu-24.04
 - Ensure the following system utilities are installed
 ```bash
 sudo apt update
-sudo apt install libboost-dev make device-tree-complier gcc g++ libboost-regex-dev libboost-system-dev autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev libfuse2 -y
+sudo apt install libboost-dev make device-tree-compiler gcc g++ libboost-regex-dev libboost-system-dev autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev libfuse2 -y
 ```
 
 ### Installation steps
