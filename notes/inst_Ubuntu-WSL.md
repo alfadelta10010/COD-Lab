@@ -34,14 +34,10 @@ echo $"export PATH=\$PATH:/opt/riscv/bin/" >> ~/.bashrc
 ##### RISC-V GCC
 2. Download the pre-built `riscv64-gcc.tar.gz` 
 ```bash
-wget 106.51.104.190:38294/riscv64_gcc.tar.gz
+wget https://github.com/alfadelta10010/COD-Lab/releases/download/RISC-V_GCC/riscv64_gcc.tar.gz
 mv riscv64_gcc.tar.gz /opt/riscv
 tar -xvzf riscv64_gcc.tar.gz
 ```
-:warning: In case of download issues, download via browser: 
-- [MEGA.nz](https://mega.nz/file/ALAxBCCA#UWaEQKohHEzm5ASrp8HZOcH2xKXbLmJ8qZ8mMjVTjhI)
-- [Google Drive (PES Email)](https://drive.google.com/drive/folders/1_nPdkyWbSRlEtaq8tHVNZSQy6JT0uEp-?usp=drive_link)
-
 
 ##### Proxy Kernel
 3. Go to `/tmp`, we're building `pk`, the [RISC-V proxy kernel](https://github.com/riscv-software-src/riscv-pk)
