@@ -36,7 +36,7 @@ eval "$(ssh-agent -s)"
 ssh-add ~/.ssh/id_ed25519
 ```
 
-- Next, you need to add the SSH key to your GitHub account
+- Next, you need to add the SSH key to your GitHub account with the following steps
 
 1. Copy the SSH public key to your clipboard.
 ```bash
