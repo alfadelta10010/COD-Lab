@@ -36,6 +36,7 @@ echo $"export PATH=\$PATH:/opt/riscv/bin/" >> ~/.bashrc
 ```bash
 wget https://github.com/alfadelta10010/COD-Lab/releases/download/RISC-V_GCC/riscv64_gcc.tar.gz
 mv riscv64_gcc.tar.gz /opt/riscv
+cd /opt/riscv
 tar -xvzf riscv64_gcc.tar.gz
 ```
 
