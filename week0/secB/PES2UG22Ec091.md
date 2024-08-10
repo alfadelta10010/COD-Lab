@@ -1,5 +1,5 @@
 ## Name
-- <Parasapp Naylar>
+- <Parasapp Naykar>
 ## SRN
 - <PES2UG22EC091>
 ## Device
