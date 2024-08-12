@@ -1,7 +1,7 @@
 
 ## Name
-- <Shashank Gowda VR>
+- Shashank Gowda VR
 ## SRN
-- <PES2UGG22EC126>
+- PES2UGG22EC126
 ## Device
-- <WSL>
+- WSL
