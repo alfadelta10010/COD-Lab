@@ -28,4 +28,4 @@
 
 - **Note**: Open a PR to submit
 
-:warning: **Deadline**: 11:59 PM, Wednesday, 21st August, 2024
+:warning: **Deadline**: 11:59 PM, Saturday, 24th August, 2024
