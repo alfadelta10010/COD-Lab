@@ -1,6 +1,6 @@
-Name:
+## Name:
 Esha Pangarkar
-SRN:
+## SRN:
 PES2UG22EC052
-DEVICE:
+## Device:
 DELL INSPIRON
