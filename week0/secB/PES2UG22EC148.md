@@ -2,5 +2,5 @@
 Tejaswini VM
 ## SRN
 PES2UG22EC148
-##Device
+## Device
 wsl ubuntu
