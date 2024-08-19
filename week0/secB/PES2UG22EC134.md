@@ -1,8 +1,8 @@
-Name:
+## Name:
 Shrieya D R
 
-SRN:
+## SRN:
 PES2UG22EC134
 
-Device:
-HP laptop UBuntu Dual booted 
+## Device:
+HP laptop Ubuntu Dual booted 
