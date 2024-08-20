@@ -71,6 +71,7 @@ Week1_Lab.s
 - Two values of bit and word size each are defined and stored in memory. We access data memory locations using physical address (Base Address + Immediate Offset)
 - Values are loaded into saved registers using respective load instructions in terms of signed and unsigned, added together, and the result is stored back in destination register.
 - Result stored in destination register is stored into data memory using store instruction. We can compare and see the difference between signed and unsigned addition clearly.
+- No signed and unsigned addition in word data types for rv32i because all 32 bits are occupied in registers (no scope for sign extension).
 
 ### Register Mapping
 - **x18:** 0xffff8000
