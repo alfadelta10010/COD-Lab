@@ -14,7 +14,7 @@ main() {
 
 ### Name of the file : COD-Lab/week2/prog1w2.s
 
-###Observation - Single Cycle
+### Observation - Single Cycle
 - In this program, we are converting the above given c code to assembly. 
 - We use several load, add and store statements.
 - This program is finding the sum of all the elements in the "array" of elements
