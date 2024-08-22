@@ -1,0 +1,87 @@
+# Program 1: 
+Write an Assembly Program for addition of 2 words
+
+### Name of file:
+program1.s
+
+### Observation - Single Cycle
+- We are storing the content of a in 2 registers. We are adding the components of a and storing it in one register.
+ 
+### Register Mapping
+- x11:0x31572456
+- x12:0x14545a14
+- x13:0x45ab7e6a
+
+### Data Mapping
+- 0x00000000:0x10000517
+- 0x00000004:0x00050513
+- 0x00000008:0x00052583
+- 0x0000000c:0x00452603
+- 0x00000010:0x00c586b3
+- 0x00000014:0x00d52423
+
+#Program 2: 
+Write an Assembly Program for addition of 2 half words
+
+## Name of file:
+program2.s
+
+### Observation - Single Cycle
+- We are storing the half words in two different registers and then we are adding them. The final value is stored in one more registers.
+
+### Register Mapping
+- x11:0x0000445a
+- x12:0x00001277
+- x13:0x000056d1
+
+### Data Mapping
+- 0x00000000:0x10000517
+- 0x00000004:0x00050513
+- 0x00000008:0x00051583
+- 0x0000000c:0x00251603
+- 0x00000010:0x00c586b3
+- 0x00000014:0x00d51223
+
+#Program 3:
+Write an Assembly Program for addition of 2 bytes
+
+## Name of file:
+program3.s
+
+### Observation - Single Cycle
+- We are storing the byte size word in two registers. The we are storing the added value in another register.
+
+### Register Mapping
+- x11:0x00000007
+- x12:0x00000077
+- x13:0x0000007e
+
+### Data Mapping
+- 0x00000000:0x10000517
+- 0x00000004:0x00050513
+- 0x00000008:0x00050583
+- 0x0000000c:0x00150603
+- 0x00000010:0x00c586b3
+- 0x00000014:0x00d50123
+
+#Program 4:
+Write an Assembly Program and analyse the format of storing signed and unsigned words, half words and byte data types
+
+## Name of file:
+program4.s
+
+### Observation - Single Cycle
+- We are storing two half word size word in two different registers and then loading into register as half word we add them and store the value in another register
+
+### Register Mapping
+- x11:0x00000001
+- x12:0x00001234
+- x13:0x00001235
+
+### Data Mapping
+- 0x00000000:0x10000517
+- 0x00000004:0x00050513
+- 0x00000008:0x00055583
+- 0x0000000c:0x00255603
+- 0x00000010:0x00c586b3
+- 0x00000014:0x00d51223
