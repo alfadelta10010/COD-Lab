@@ -70,7 +70,7 @@ signed_byte_addition.s
 ### Statement: write a program to analyse the format of storing signed and unsigned words, half words and byte data types
 
 ### Name of file:
-unsigned_byte_addition.s
+unsigned.s
 
 ### Observation - Single Cycle
 - .data block is used to store the required values in memory
