@@ -92,63 +92,54 @@ analysis.s
 - Adds them and stores the results in memory.
  
 ### Register Mapping
-Signed Word
-- x10 : To load a word from array/memory
-- x2  : To load signed word
-- x3  : To load signed word 
-- x4  : To add and store the 2 signed words
+x5 : Loading the word from array/memory
+x6 : loading 1st word
+x7 : loading 2nd word
+x8 : storing the added results of 2 words
 
-Signed Half Word
-- x11 : To load half words from array
-- x12 : To load 1st half word
-- x13 : To load 2nd half word
-- x14 : To add and store the 2 signed half words
+x9 : loading the half words from memory
+x10 : loading 1st half word
+x11 : loading 2nd half word
+x12 : storing the added results of 2 half words
 
-Signed Bit
-- x11 : To load bits from array
-- x12 : To load 1st bit
-- x13 : To load 2nd bit
-- x14 : To add and store 2 signed bits
+x13 : loading the bytes from memory
+x14 : loading 1st byte
+x15 : loading 2nd byte
+x16 : storing the added results of 2 bytes
 
-Unsigned Half Word
-- x10 : To load half words from array
-- x12 : To laod 1st unsigned half word 
-- x13 : To load 2nd unsigned half word
-- x14 : To add and store 
+Unsigned Operations
+x17 : loading the half words from memory
+x18 : loading 1st half word
+x19 : loading 2nd half word
+x20 : storing the added results of 2 unsigned half words
 
-Unsigned Bit
-- x11 : To load bits from arary
-- x12 : To laod 1st unsigned bit
-- x13 : To load 2nd unsigned bit
-- x14 : To add and store
+x21 : loading the bytes from memory
+x22 : loading 1st byte
+x23 : loading 2nd byte
+x24 : storing the added results of 2 unsigned bytes
 
 ### Data Mapping
-Signed Word
-- x10 : 0x10000000 
-- x2 : 0x80000112
-- x3 : 0x9123456c
-- x4 : 0x1123467e
 
-Signed Half Word
-- x11 : 0x10000008
-- x12 : 0x0000467e
-- x13 : 0x00001123
-- x14 : 0x000057a1
+x5 : 0x10000000
+x6 : 0x80000112
+x7 : 0x9123456c
+x8 : 0x1123467e
+x9 : 0x10000008
+x10 : 0x0000467e
+x11 : 0x00001123
+x12 : 0x000057a1
+x13 : 0x1000000c
+x14 : 0xffffffa1
+x15 : 0x00000057
+x16 : 0xfffffff8
+x17 : 0x10000008
+x18 : 0x0000467e
+x19 : 0x00001123
+x20 : 0x000057a1
+x21 : 0x1000000c
+x22 : 0x000000a1
+x23 : 0x00000057
+x24 : 0x000000f8
 
-Signed Bit
-- x11 : 0x1000000c
-- x12 : 0xffffff82
-- x13 : 0x0000006a
-- x14 : 0xffffffec
 
-Unsigned Half Word
-- x10 : 0x10000008
-- x12 : 0x0000467e
-- x13 : 0x00001123
-- x14 : 0x000057a1
-
-Unsigned Bit
-- x11 : 0x1000000c
-- x12 : 0x000000a1
-- x13 : 0x00000057
-- x14 : 0x000000f8
+----------------------------------------------------------------------------------------
