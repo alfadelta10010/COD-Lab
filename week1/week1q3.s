@@ -1,5 +1,5 @@
 .data
-a: .byte 0x82, 0x32
+a: .byte 0x12, 0x32
 .text
 la x10, a
 lb x11, 0(x10)
