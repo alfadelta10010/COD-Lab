@@ -4,30 +4,29 @@ b: .half 0x8002, 0x456A
 c: .byte 0x82, 0x6A               
 .text
     
-    la x20, a            
-    lw x21, 0(x20)       
-    lw x22, 4(x20)       
-    add x23, x21, x22   
-    sw x23, 8(x20)      
-    la x24, b           
-    lh x25, 0(x24)      
-    lh x26, 2(x24)      
-    add x27, x25, x26    
-    sh x27, 4(x24)      
-    la x28, c            
-    lb x29, 0(x28)       
-    lb x30, 1(x28)      
-    add x31, x29, x30    
-    sb x31, 2(x28)       
-
+    la x5, a           
+    lw x6, 0(x5)        
+    lw x7, 4(x5)        
+    add x8, x6, x7     
+    sw x8, 8(x5)        
+    la x9, b           
+    lh x10, 0(x9)       
+    lh x11, 2(x9)       
+    add x12, x10, x11  
+    sh x12, 4(x9)       
+    la x13, c          
+    lb x14, 0(x13)     
+    lb x15, 1(x13)     
+    add x16, x14, x15  
+    sb x16, 2(x13)    
    
-    la x32, b           
-    lhu x33, 0(x32)     
-    lhu x34, 2(x32)      
-    add x35, x33, x34    
-    sh x35, 4(x32)      
-    la x36, c           
-    lbu x37, 0(x36)     
-    lbu x38, 1(x36)     
-    add x39, x37, x38   
-    sb x39, 2(x36)      
+    la x17, b           
+    lhu x18, 0(x17)     
+    lhu x19, 2(x17)     
+    add x20, x18, x19   
+    sh x20, 4(x17)     
+    la x21, c          
+    lbu x22, 0(x21)     
+    lbu x23, 1(x21)     
+    add x24, x22, x23   
+    sb x24, 2(x21)      # Store result into address c[2]
