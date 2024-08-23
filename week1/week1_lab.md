@@ -2,14 +2,14 @@
 ### Statement: Write an Assembly Program for addition of 2 words
 
 ### Name of file:
-q1pes085.s
+q1pes096.s
 
 ### Observation - Single Cycle
 - Since the question asked is for the addition of 2 words we are storing the value of the 2 words in registers x11 and x12.
 - The lw commands are used to load the words. Next we are using ADD command to find the addition of the two numbers and further the value of the added result will be stored in x13 with the help of sw command
 
 ### Register Mapping
-- **x11:** 0x11112221
+- **x11:** 0x11112431
 - **x12:** 0x12345678
 - **x13:** 0x23457899
 
@@ -25,7 +25,7 @@ q1pes085.s
 ### Statement: Write an Assembly Program for addition of 2 half words
 
 ### Name of file:
-q2pes085.s
+q2pes096.s
 
 ### Observation - Single Cycle
 - Since the question asked is for the addition of 2 half words we are storing the value of the 2 half words in registers x15 and x16.
@@ -46,7 +46,7 @@ q2pes085.s
 ### Statement: Write an Assembly Program for addition of 2 bytes
 
 ### Name of file:
-q3pes085.s
+q3pes096.s
 
 ### Observation - Single Cycle
 - The question asked is for the addition of 2 bytes we are storing the value of the 2 bytes in registers x15 and x16.
@@ -68,7 +68,7 @@ help of sw command
 ### Statement: Write an Assembly Program and analyse the format of storing signed and unsigned words, half words and byte data types
 
 ### Name of file:
-q4pes085.s
+q4pes096.s
 
 ### Observation - Single Cycle
 - Here we are using one signed and one unsigned number of word, half word and byte data types 
