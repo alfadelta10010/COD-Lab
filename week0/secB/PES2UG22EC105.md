@@ -1,6 +1,6 @@
 ## Name
-- <Rahul Kulkarni>
+- Rahul Kulkarni
 ## SRN
-- <PES2UG22EC105>
+- PES2UG22EC105
 ## Device
-- <Ubuntu>
+- Ubuntu
