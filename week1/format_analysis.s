@@ -1,32 +1,36 @@
-# Program 4:
+    .data
+a: .word 0x80000112, 0x9123456C   
+b: .half 0x8002, 0x456A           
+c: .byte 0x82, 0x6A               
 
+    .text
+    la x10, a            
+    lw x2, 0(x10)        
+    lw x3, 4(x10)        
+    add x14, x3, x2      
+    sw x14, 8(x10)       
 
-### Statement:
-Write an assembly program that performs arithmetic operations on signed and unsigned words, half-words, and bytes, and stores the results back in memory.
+    la x11, b            
+    lh x12, 0(x11)       
+    lh x13, 2(x11)      
+    add x14, x13, x12    
+    sh x14, 4(x11)      
+    la x11, c            
+    lb x12, 0(x11)      
+    lb x13, 1(x11)       
+    add x14, x13, x12   
+    sb x14, 2(x11)   
 
-### Name of file:
-add_format_analysis.s
+    
+    la x11, b            
+    lhu x12, 0(x11)      
+    lhu x13, 2(x11)      
+    add x14, x13, x12    
+    sh x14, 4(x11)       
+    la x11, c            
+    lbu x12, 0(x11)      
+    lbu x13, 1(x11)     
+    add x14, x13, x12   
+    sb x14, 2(x11)       
 
-### Observation - Single Cycle
-	•	The program loads two 32-bit words from memory (a[0] and a[1]), adds them, and stores the result in a[2].
-	•	The program loads two 16-bit signed half-words from memory (b[0] and b[1]), adds them, and stores the result in b[2].
-	•	The program loads two 8-bit signed bytes from memory (c[0] and c[1]), adds them, and stores the result in c[2].
-Register Mapping
-	•	x10: Base address of array a or b
-	•	x11: Base address of array c
-	•	x2: Value stored in a[0] (0x80000112)
-	•	x3: Value stored in a[1] (0x9123456C)
-	•	x12: Value stored in b[0] (0x8002) or c[0] (0x82)
-	•	x13: Value stored in b[1] (0x456A) or c[1] (0x6A)
-	•	x14: Result of addition operations
-Data Mapping
-	•	a[0]: 0x80000112
-	•	a[1]: 0x9123456C
-	•	a[2]: Result of 0x80000112 + 0x9123456C = 0x000000f8
-	•	b[0]: 0x8002
-	•	b[1]: 0x456A
-	•	b[2]: Result of 0x8002 + 0x456A 
-	•	c[0]: 0x82
-	•	c[1]: 0x6A
-	•	c[2]: Result of 0x82 + 0x6A (stored in c[2])
-
+    
