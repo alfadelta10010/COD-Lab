@@ -63,11 +63,15 @@ week2q2.s
 ### Data Mapping
 (for 1st index)
 - **x15:** 0x00000009
+  
 (for 2nd index)
 - **x15:** 0x00000009
+  
 (for 3rd index)
 - **x15:** 0x0000000b
+
 (for 4th index
 - **x15:** 0x00000009
+  
 (for 5th index)
 - **x15:** 0x00000007
