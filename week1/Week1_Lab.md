@@ -8,13 +8,13 @@ week1q1.s
 the code adds 2 word (32 bits) then stores them into a register. there is an offset of 4 as 1 word = 4 bytes.
  
 ### Register Mapping
-- **x10:** 0x80000002, 0x9123456A
-- **x11:** 0x9123456A
-- **x12:** 0x80000002
-- **x13:** 0x80000002 + 0x9123456A = 0x1123456c
+- **x10:** 0x10000000
+- **x11:** 0x80000002
+- **x12:** 0x9123456A
+- **x13:** 0x1123456C
 
 ### Data Mapping
-- **x10:** 0x1123456c
+- **x13:** 0x1123456C
 
 -----------
 
@@ -28,13 +28,13 @@ week1q2.s
 the code adds 2 half word (16 bits) then stores them into a register. there is an offset of 2 as 1 half word = 2 bytes.
  
 ### Register Mapping
-- **x10:** 0x0002, 0x0432
-- **x11:** 0x0432
-- **x12:** 0x0002
-- **x13:** 0x0002 + 0x0432 = 0x00000434
+- **x10:** 0x10000000
+- **x11:** 0x00000002
+- **x12:** 0x00000432
+- **x13:** 0x00000434
 
 ### Data Mapping
-- **x10:** 0x00000434
+- **x13:** 0x00000434
 
 ---------
 
@@ -48,17 +48,17 @@ week1q3.s
 the code adds 2 bytes (8 bits) then stores them into a register. there is an offset of 1.
  
 ### Register Mapping
-- **x10:** 0x12, 0x32
-- **x11:** 0x32
-- **x12:** 0x12
-- **x13:** 0x12 + 0x32 = 0x00000044
+- **x10:** 0x10000000
+- **x11:** 0x00000012
+- **x12:** 0x00000032
+- **x13:** 0x00000044
 
 ### Data Mapping
-- **x10:** 0x00000044
+- **x13:** 0x00000044
 
 ---------
 
-# Program 3: 
+# Program 4: 
 ### Statement: Write an Assembly Program and analyse the format of storing signed and unsigned words, half words and byte data types
 
 ### Name of file:
@@ -74,8 +74,35 @@ the sixth part does the same but for unsigned words.
 the format of storing words, half words and bytes does not change whether it is a signed or unsigned.
  
 ### Register Mapping
-- **x10:** value in a (eg: 0xFF for signed byte)
-- **x11:** value in a (eg: 0xFF for signed byte)
+-(for signed byte)
+- **x10:** 0x10000000
+- **x11:** 0xffffffff
+- (for unsigned byte)
+- **x10:** 0x10000000
+- **x11:** 0x000000ff
+- (for signed half word)
+- **x10:** 0x10000000
+- **x11:** 0xffffffff
+- (for unsigned half word)
+- **x10:** 0x10000000
+- **x11:** 0x0000ffff
+- (for signed word)
+- **x10:** 0x10000000
+- **x11:** 0xffffffff
+- (for unsigned word)
+- **x10:** 0x10000000
+- **x11:** 0x00000000
 
 ### Data Mapping
-- **x10:** value in a (eg: 0xFF for signed byte)
+-(for signed byte)
+- **x11:** 0xffffffff
+- (for unsigned byte)
+- **x11:** 0x000000ff
+- (for signed half word)
+- **x11:** 0xffffffff
+- (for unsigned half word)
+- **x11:** 0x0000ffff
+- (for signed word)
+- **x11:** 0xffffffff
+- (for unsigned word)
+- **x11:** 0x00000000
