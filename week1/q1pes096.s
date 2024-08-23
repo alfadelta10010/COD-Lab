@@ -1,6 +1,6 @@
 #1.Write an Assembly Program for addition of 2 words
 .data
-a: .word 0x11112221,0x12345678,0
+a: .word 0x11112431,0x12345678,0
 .text
 la x10,a
 lw x11,0(x10) #bringing data into register file
