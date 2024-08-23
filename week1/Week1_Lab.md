@@ -13,9 +13,15 @@ week1i.s
 ### Register Mapping
 - x2 : 0x00000000
 - x3 : 0x22222222
+- x10:0x10000000
 
 ### Data Mapping
-- x10 : stores the address of a
+- - 0x00000014 :0x00000000
+- 0x00000010 :0x00310233
+- 0x0000000c : 0x00452183
+- 0x00000008 :0x00052103
+- 0x00000004 :0x00050513
+- 0x00000000 :0x10000517
 
 # Program 2: 
 ### Statement: assembly program for addition of 2 halfwords 
@@ -33,8 +39,19 @@ week1ii.s
 - x3 : 0x3333
 -x4 :0x3333
 
+
 ### Data Mapping
-- x10: loads the address of a 
+-0x00000014: 0x00000000
+-0x00000010:0x00218233
+-0x0000000c:0x00251183
+-0x00000008:0x00051103
+-0x00000004:0x00050513
+-0x00000000:0x10000517
+
+
+
+
+
 
 # Program 3:
 ### Statement: assembly program for addition of 2 bytes
@@ -53,7 +70,13 @@ week1iii.s
 -x4:0x44
 
 ### Data Mapping
-- x10: stores the address of a
+- 0x00000014:0x00000000
+- 0x00000010:0x00218233
+- 0x0000000c: 0x00150183
+- -0x00000008:0x00050103
+- -0x00000004:0x00050513
+- 0x00000000:0x10000517
+
 
 # Program 4:
 ### Statement: write an assembly program and analyze the format of storing signed and unsigned words,half words and byte data types
@@ -74,6 +97,21 @@ week1iv.s
 
 
 ### Data Mapping
--x10: loads address of a
--x11: loads address of b
--x12:loads address of c
+-0x00000038 :  0x00560123
+-0x00000034 : 0x00459323
+-0x00000030  : 0x00359223
+-0x0000002c :0x00252223
+-0x00000028 : 0x00164303
+-0x00000024 : 0x00060283
+-0x00000020 : 0x0025d203
+-0x0000001c : 0x00059183
+0x00000018  : 0x00052103
+0x00000014  : 0xff860613
+0x00000010  : 0x10000617
+0x0000000c  : 0xffc58593
+0x00000008  :  0x10000597
+0x00000004  :0x00050513
+0x00000000  :0x10000517
+ 
+
+
