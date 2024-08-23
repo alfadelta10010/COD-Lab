@@ -16,7 +16,7 @@ sb x11, 1(x10)
 
 #signed half word
 #.data
-#a: .byte 0xFFFF
+#a: .half 0xFFFF
 #.text
 #la x10, a
 #lh x11, 0(x10)
@@ -24,7 +24,7 @@ sb x11, 1(x10)
 
 #unsigned half word
 #.data
-#a: .byte 0xFFFF
+#a: .half 0xFFFF
 #.text
 #la x10, a
 #lhu x11, 0(x10)
