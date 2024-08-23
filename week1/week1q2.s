@@ -1,5 +1,5 @@
 .data
-a: .half 0x8002, 0x9432
+a: .half 0x0002, 0x0432
 .text
 la x10, a
 lh x11, 0(x10)
