@@ -74,7 +74,7 @@ the sixth part does the same but for unsigned words.
 the format of storing words, half words and bytes does not change whether it is a signed or unsigned.
  
 ### Register Mapping
--(for signed byte)
+- (for signed byte)
 - **x10:** 0x10000000
 - **x11:** 0xffffffff
 - (for unsigned byte)
@@ -94,7 +94,7 @@ the format of storing words, half words and bytes does not change whether it is 
 - **x11:** 0x00000000
 
 ### Data Mapping
--(for signed byte)
+- (for signed byte)
 - **x11:** 0xffffffff
 - (for unsigned byte)
 - **x11:** 0x000000ff
