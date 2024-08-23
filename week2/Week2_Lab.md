@@ -15,7 +15,7 @@ main() {
 
 ### Observation - Single Cycle
 To be done in Class Yet
-On sir instruction will upload this and the following parts for program-1 later
+On sir instruction will update this and the following sub-parts of this program 1
  
 ### Register Mapping
 - **<Register Number Used>:** <Value stored>
