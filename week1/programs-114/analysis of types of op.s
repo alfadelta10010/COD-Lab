@@ -26,7 +26,7 @@ sh x6, 2(x5)
 .data
 d: .half 0xFFFF
 .text
-la x7, c
+la x7, d
 lhu x8, 0(x7)
 sh x8, 2(x7)
 
@@ -34,7 +34,7 @@ sh x8, 2(x7)
 .data
 e: .word 0xFFFFFFFF
 .text
-la x9, d
+la x9, e
 lw x10, 0(x9)
 sw x10, 4(x9)
 

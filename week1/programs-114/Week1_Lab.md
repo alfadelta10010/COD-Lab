@@ -105,15 +105,16 @@
 - x5  : 0x10000002
 - x6  : 0xffffffff
 ##### unsigned halfword 
-- x7  : 0x10000002
+- x7  : 0x10000004
 - x8  : 0x0000ffff
 #### signed & unsigned word
-- x9  : 0x10000004
+- x9  : 0x10000006
 - x10 : 0xffffffff
 
 ### Data Mapping
 - 0x10000020 : 0x00000000
 - 0x10000010 : 0x00000000
+- 0x1000000c : 0x0000ffff
 - 0x10000008 : 0xffffffff
 - 0x10000004 : 0xffffffff
 - 0x10000000 : 0xffffffff
