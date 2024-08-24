@@ -44,7 +44,7 @@ sh x20,20(x1)
 
 #PROGRAM 2. Write an Assembly Program for addition of 2 64-bit numbers on RV32I 
 .data
-b: .dword 0xFEABCFDEFFEEACDB,0XEEEEAAAABBBBCCCC,0
+b: .word 0xFEABCFDE,0xFFEEACDB,0xEEEEAAAA,0xBBBBCCCC,0
 .text
 la x10,b
 lw x11,0(x10)
