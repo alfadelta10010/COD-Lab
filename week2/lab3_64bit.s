@@ -9,7 +9,8 @@ lw x4,12(x10)
 add x5,x2,x4 #lsb
 sltu x6,x5,x4  #lsb carry  
 add x7,x1,x3  #msb
-sltu x11,x7,x3  #msb carry
+sltu x9,x7,x3  #msb carry
 add x8,x6,x7 #adding lsb carry to msb 
-sw x8,16(x10)
-sw x5,20(x10)
+sw x8,20(x10) #storing msb of added bit
+sw x5,24(x10)#storing lsb of added bit
+sw x9,16(x10)#storing caryy of added msb
