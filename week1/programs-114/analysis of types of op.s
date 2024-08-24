@@ -1,17 +1,48 @@
- .data 
-a: .byte 0x14, 0x12, 0        
-b: .half 0x1246, 0xa678, 0    
-c: .word 0x34567823, 0x12345678 
-
+#signed byte
+.data
+a: .byte 0xFF
 .text
-la x15, a       
-lb x4, 0(x15)  
-sb x4, 1(x15)
-       
-la x14, b           
-lh x3, 0(x14)       
-sh x3, 2(x14)       
+la x10, a
+lb x12, 0(x10)
+sb x12, 1(x10)
 
-la x12, c           
-lw x2, 0(x12)       
-sw x2, 4(x12)
+#unsigned byte
+.data
+b: .byte 0xFF
+.text
+la x11, b
+lbu x1, 0(x10)
+sb x1, 1(x10)
+
+#signed half word
+.data
+c: .half 0xFFFF
+.text
+la x2, a
+lh x3, 0(x10)
+sh x3, 1(x10)
+
+#unsigned half word
+.data
+d: .half 0xFFFF
+.text
+la x4, c
+lhu x5, 0(x10)
+sh x5, 1(x10)
+
+#signed word
+.data
+e: .word 0xFFFFFFFF
+.text
+la x6, d
+lw x7, 0(x10)
+sw x7, 1(x10)
+
+#unsigned word
+.data
+f: .word 0xFFFF
+.text
+la x9, e
+lhu x14, 0(x10)
+sw x14, 1(x10)
+
