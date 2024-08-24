@@ -74,16 +74,26 @@
 - The answer is being stored in a register as byte type and half type
  
 ### Register Mapping
-- x10:
-- x11:
-- x12:
-- x13:
-- x14:
-- x15:
-- x16:
-- x17:
+for half
+- x10:0x10000000
+- x11:0x00000232
+- x12:0x00001126
+- x13:0x00001358
+
+for byte
+- x10:0x10000000
+- x11:0x00000002
+- x12:0x00000026
+- x13:0x00000028
 
 
 
 ### Data Mapping
-- **<Memory Address>:** <Value stored>
+for half:
+- 0x10000004:0x00001358
+- 0x10000000:0x11260232
+for byte:
+  -0x10000004:0x00000000
+  -0x10000000:0x00282602
+
+  
