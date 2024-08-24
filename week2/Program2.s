@@ -1,16 +1,24 @@
 .data
-a: .dword 0xffffffffffffffff
-b: .dword 0xffffffffffffffff
+a:.word 0x00000001,0x00000002,0x00000003,0x00000004,0x00000005
+b:.word 0x00000006,0x00000007,0x00000008,0x00000009,0x0000000A
+c:.word 0x00000000,0x00000000,0x00000000,0x00000000,0x00000000
 .text
-la x10, a
-la x11, b
-lw x12,0(x10)
-lw x13,4(x10)
-lw x14,0(x11)
-lw x15,4(x11)
-add x16,x12,x14
-sltu x17,x16,x14
-add x18,x13,x15
-sltu x19,x18,x13
-add x20,x18,x17
-
+la x8,a
+la x9,b
+la x10,c
+lw x11,0(x8)
+lw x12,0(x9)
+add x13,x11,x12
+sw x13,0(x10)
+lw x11,4(x8)
+lw x12,4(x9)
+add x13,x11,x12
+sw x13,4(x10)
+lw x11,8(x8)
+lw x12,8(x9)
+add x13,x11,x12
+sw x13,8(x10)
+lw x11,10(x8)
+lw x12,10(x9)
+add x13,x11,x12
+sw x13,10(x10)
