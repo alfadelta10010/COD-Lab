@@ -18,7 +18,7 @@ sb x4, 1(x3)
 .data
 c: .half 0xFFFF
 .text
-la x5, a
+la x5, c
 lh x6, 0(x5)
 sh x6, 2(x5)
 
