@@ -13,6 +13,8 @@ In case of mistakes, reach out to [alfadelta10010](https://wa.me/919967058974)
 - For Windows users:
 	- Install Windows Subsystem for Linux - Ubuntu by opening Powershell and running the following command:
 ```bash
+wsl --update
+wsl --shutdown
 wsl --install -d Ubuntu-24.04
 ```
 :warning: Run all following commands in the **Ubuntu** terminal from the drop down option 
@@ -20,7 +22,7 @@ wsl --install -d Ubuntu-24.04
 - Ensure the following system utilities are installed
 ```bash
 sudo apt update
-sudo apt install libboost-dev make device-tree-compiler gcc g++ libboost-regex-dev libboost-system-dev autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev libfuse2 -y
+sudo apt install libboost-dev make device-tree-compiler gcc g++ libboost-regex-dev libboost-system-dev autoconf automake autotools-dev curl python3 python3-pip libmpc-dev libmpfr-dev libgmp-dev gawk build-essential bison flex texinfo gperf libtool patchutils bc zlib1g-dev libexpat-dev ninja-build git cmake libglib2.0-dev libslirp-dev libfuse2 libxcb-xinerama0 libqt5x11extras5 -y
 ```
 
 ### Installation steps
