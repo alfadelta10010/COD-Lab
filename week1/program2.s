@@ -1,21 +1,8 @@
-# Program 2: 
- ### Statement: Write an Assembly Program for addition of 2 half words
-
-### Name of file:
-program2.s
-
-### Observation - Single Cycle
- Single Cycle
-- Loads two half words from memory.
-- Adds the two half words and stores the result in a register.
-- Stores the result back in memory.
-
- 
-### Register Mapping
-- x11:0x00000001
-- x12:0x00001234
-- x13:0x00001235
-
-### Data Mapping
-- 0x10000004:0x00001235
-- 0x10000001:0x12340001;
+.data 
+a: .half 0xffff,0xeeee  #a is the reference for the base address, 16 bit number
+.text                                              
+la x10,a                       #load adrdress to base address of variable a into x10
+lhu x11,0(x10)                  #load  halfword ,x11 is the destination with offset 0
+lhu x12,2(x10)                  #lload halfword ,x12 is the destnination with offset 2
+add x13,x11,x12                #adding halfword in x11 and x12 and storingit in x13
+sh x13,4(x10)                  #storing halfword in x13
