@@ -1,20 +1,38 @@
-# Program 4: 
-### Statement:  Write an Assembly Program and analyze the format of storing signed and unsigned words, half words, and byte data types
+.data
+a: .half 0x7000 , 0x0001
+.text
+la x2, a
+lh x18,0(x2)
+lh x19,2(x2)
+add x20,x18,x19
+sh x20,4(x2)
+lhu x21,0(x2)
+lhu x22,2(x2)
+add x23,x21,x22
+sh x23,6(x2)
 
+# BYTE 
+.data
+b: .byte 0x88 , 0x4F
 
-### Name of file:
-program4.s
+.text
+la x2, b
+lb x24,0(x2)
+lb x25,1(x2)
+add x26,x24,x25
+sb x26,2(x2)
+lbu x27,0(x2)
+lbu x28,1(x2)
+add x29,x27,x28
+sb x29,3(x2)
 
-### Observation - Single Cycle
-- Loads signed words, half-words, and bytes from memory.
-- Adds them and stores the results in memory.
+# words
+.data
+c: .word 0x00000087 , 0x0000003F
+.text
 
-
-### Register Mapping
- x11:0x00000001
- x12:0x00001234
- x13:0x00001235
-
-### Data Mapping
-- 0x10000004:0x00001235
-- 0x10000000:0x12340001;
+la x10, b
+lw x25,0(x10)
+lw x26,4(x10)
+add x27,x25,x26
+sw x27,8(x10)
