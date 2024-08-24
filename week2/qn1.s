@@ -48,4 +48,4 @@ a:  .half 0x1234        # a[0]
     add t0, t0, t1     # h = h + a[9]
     
     # Store h (t0) in a[10]
-    sh t0, 20(x10)       # Store h in a[10]
+    sh t0, 20(x10)       # Store h in a[10] 
