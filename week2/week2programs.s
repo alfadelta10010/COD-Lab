@@ -1,6 +1,6 @@
 #Program 1:Write an Assembly Program for the following C code:
 .data
-a: .half 0x0000,0x1000,0x0200,0x0030,0x0001,0x0101,0x2010,0x0010,0x1023,0x2011
+a: .half 0x0000,0x1000,0x0200,0x0030,0x0001,0x0101,0x2010,0x0010,0x1023,0x2011,0x0001
 .text
 la x1,a
 lh x2,0(x1)
@@ -39,6 +39,13 @@ sh x18,20(x1)
 lh x19,18(x1)
 add x20,x19,x18
 sh x20,20(x1)
+
+lh x21,22(x1)
+add x22,x21,x20
+sh x22,18(x1)
+
+
+
 #added sum is stored in register x20
 #-----------------------------------------------------------------------------
 
