@@ -1,20 +1,8 @@
-# Program 3: 
-### Statement:  Write an Assembly Program for addition of 2 bytes
-
-### Name of file:
-program3.s
-### Observation - Single Cycle
-- Loads two bytes from memory.
-- Adds the two bytes and stores the result in a register.
-- Stores the result back in memory.
-
-
- 
-### Register Mapping
-- x11:0x00000001
-- x12:0x00000012
-- x13:0x00000013
-
-### Data Mapping
-- 0x10000004:0x00000000
-- 0x10000000:0x00131201;
+.data 
+a: .byte 0x01,0x08  #a is the reference for the base address, 8bit number
+.text                                              
+la x10,a                       #load adrdress to base address of variable a into x10
+lw x11,0(x10)                  #load word ,x11 is the destination with offset 0
+lw x12,1(x10)                  #lload word ,x12 is the destnination with offset 4
+add x13,x11,x12                #adding word in x11 and x12 and storingit in x13
+sw x13,2(x10)                  #storing byte in x13
