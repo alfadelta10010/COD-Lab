@@ -7,7 +7,7 @@
 	4. Write an Assembly Program and analyse the format of storing signed and unsigned words, half words and byte data types
 - Ensure your code has comments for the statements
 
-- While submitting, you are required to make a Markdown file with the following contents. You are required to submit your observations in the same manner
+- While submitting, you are requird to make a Markdown file with the following contents. You are required to submit your observations in the same manner
 
 - File name: Week1_Lab.md
 ```markdown
