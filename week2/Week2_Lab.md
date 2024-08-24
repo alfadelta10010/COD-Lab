@@ -10,18 +10,25 @@ main() {
 	a[10] = h;
 }
 
-### Name of file: CtoAssembly.s
+### Name of file: arrayWith11.s
 
 
 ### Observation - Single Cycle
-To be done in Class Yet
-On sir instruction will update this and the following sub-parts of this program 1
+Adding array of 11 elements
  
 ### Register Mapping
-- **<Register Number Used>:** <Value stored>
+x5 : loading the array
+x6 : li of 0
+x7 : li of 0
+x8 : shift x7 by 1
+x9 : load half
 
 ### Data Mapping
-- **<Memory Address>:** <Value stored>
+x5 : 0x10000000
+x6 : 0x00001234
+x7 : 0x00000001
+x8 : 0x10000002
+x9 : 0x00001234
 
 
 ---------------------------------------------------------------------------
@@ -66,3 +73,5 @@ CtoAssembly.s
 
 
 ---------------------------------------------------------------------
+
+
