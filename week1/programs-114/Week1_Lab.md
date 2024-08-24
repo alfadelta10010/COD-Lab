@@ -97,7 +97,7 @@
 ### Register Mapping
 #### signed byte 
 - x1  : 0x10000000
-- x2  : 0xffffff97
+- x2  : 0xffffffff
 #### unsigned byte
 - x3  : 0x10000001
 - x4  : 0x000000ff
