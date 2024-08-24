@@ -13,7 +13,7 @@
 ### Register Mapping
 - x7 : 0x000084f6
 - x8 : 0x0f610000
--  x9 : 0x0f6184f6
+- x9 : 0x0f6184f6
 
 ### Data Mapping
 - 0x10000008 : 0x0f6184f6
@@ -102,13 +102,13 @@
 - x3  : 0x10000001
 - x4  : 0x000000ff
 #### signed halfword
-- x5  : 0x10000000
+- x5  : 0x10000002
 - x6  : 0xffffffff
 ##### unsigned halfword 
 - x7  : 0x10000002
 - x8  : 0x0000ffff
 #### signed & unsigned word
-- x9  : 0x100000040
+- x9  : 0x10000004
 - x10 : 0xffffffff
 
 ### Data Mapping
