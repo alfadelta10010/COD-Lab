@@ -13,6 +13,8 @@ In case of mistakes, reach out to [alfadelta10010](https://wa.me/919967058974)
 - For Windows users:
 	- Install Windows Subsystem for Linux - Ubuntu by opening Powershell and running the following command:
 ```bash
+wsl --update
+wsl --shutdown
 wsl --install -d Ubuntu-24.04
 ```
 :warning: Run all following commands in the **Ubuntu** terminal from the drop down option 
