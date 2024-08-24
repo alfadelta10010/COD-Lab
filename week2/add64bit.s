@@ -11,7 +11,7 @@ sltu s4,s3,s2 # comparing the value of s3 with s2, if its less then 1 else 0, ba
 sw s4,20(x1) # storing the carry in the 20th memory location
 
 lw s1,4(x1) # loading the MSB of first element into the s1 register
-lw s2,12(x1) # loading the LSB of next element into the s2 register
+lw s2,12(x1) # loading the MSB of next element into the s2 register
 lw s10,20(x1) # loading the carry generated in the first addition of our LSB elements
 add s5,s10,s2 # Adding the carry generated with the MSB bit of the second number
 
