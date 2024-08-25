@@ -2,7 +2,7 @@
 ### Statement: Write an Assembly Program for addition of 2 words
 
 ### Name of file:
-- word addition.s  
+ word addition.s  
 
 ### Observation - Single Cycle
 - loading adresses of 2 words to registers
@@ -24,7 +24,7 @@
 ### Statement: Write an Assembly Program for addition of 2 half words
  
 ### Name of file:
--  half addition.s
+ half addition.s
 
 ### Observation - Single Cycle
 - loading adresses of 2 halfwords to registers
@@ -47,7 +47,7 @@
 ### Statement: Write an Assembly Program for addition of 2 bytes
 
 ### Name of file:
--  2 bytes addition.s
+ 2 bytes addition.s
 
 ### Observation - Single Cycle
 - loading adresses of 2 bytes to registers
@@ -70,7 +70,7 @@
 ### Statement: Write an Assembly Program for addition of 2 words
 
 ### Name of file:
-- analysis of types of op.s  
+ analyses of storing different data type.s  
 
 ### Observation - Single Cycle
 #### signed byte
