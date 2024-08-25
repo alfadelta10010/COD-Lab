@@ -1,4 +1,4 @@
-# Program 1: 
+ # Program 1:
 ### Statement: 
 Write an Assembly Program for the following C code:
 main() {
@@ -44,7 +44,7 @@ main() {
 - 0x10000000:0x12340000
 
 
-# Program 1: 
+# Program 2: 
 ### Statement: <2. Write an Assembly Program for addition of 2 64-bit numbers on RV32I >
 
 ### Name of file:
