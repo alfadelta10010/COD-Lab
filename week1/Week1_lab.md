@@ -22,7 +22,7 @@
 - 0x10000000:0x80000002
 
 
-# Program 1: 
+# Program 2: 
 ### Statement: <Write an Assembly Program for addition of 2 half words>
 
 ### Name of file:
@@ -42,7 +42,7 @@
 - 0x10000008:0x1123456c
 - 0x9123456a:0x10000004
 
-# Program 1: 
+# Program 3: 
 ### Statement: Write an Assembly Program for addition of 2 bytes
 
 ### Name of file:
@@ -62,7 +62,7 @@
 - 0x10000000:0x00282602
 
 
-# Program 1: 
+# Program 4: 
 ### Statement: <Write an Assembly Program and analyse the format of storing signed and unsigned words, half words and byte data types>
 
 ### Name of file:
