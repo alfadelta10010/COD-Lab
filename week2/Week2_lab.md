@@ -1,5 +1,6 @@
 # Program 1: 
-### Statement: <Write an Assembly Program for the following C code:>
+### Statement: 
+Write an Assembly Program for the following C code:
 main() {
 	unsigned short int a[11] = {0x1234, 0x5678, ...}, h;
 	h = 0;
