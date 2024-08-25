@@ -24,7 +24,7 @@
 ### Statement: Write an Assembly Program for addition of 2 half words
  
 ### Name of file:
- half addition.s
+ halfword addition.s
 
 ### Observation - Single Cycle
 - loading adresses of 2 halfwords to registers
