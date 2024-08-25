@@ -14,7 +14,9 @@ main() {
 <COD-Lab/Week2/lab2code2loop.s>
 
 ### Observation - Single Cycle
-- 
+-  Since we haven't learned looping in assembly code we take 3 separate registers consisting of the given registers and the third register is used to store the updated values after addition.
+- So we load the numbers first 4 bytes and then the rest into the assigned memory registers.
+- And we perform the addition multiple times instead of running it in a loop and store the added values in a register
  
 ### Register Mapping
 - x0:0x00000000
@@ -48,7 +50,10 @@ main() {
 <COD-Lab/Week2/lab2code1.s>
 
 ### Observation - Single Cycle
-- 
+-  Since we need to perform 64 bit addition we assign the data type as double word to the variables and store the values.
+- We then load the double word as 2 separate words as RV32I supports only 32 bits we load from MSB to LSB
+- We then perform regular addition of 2 words and store the value and in case we have a carry generated we use the shift left function and store the value in another register and then perform addition of that with the rest of the 32 bits and if we have a carry store that in another register
+- Finally we add all the carry's and the addition result into another register
  
 ### Register Mapping
 - x10:0x10000000
