@@ -1,7 +1,7 @@
 #assembly program for addition of 2 half-words
 
 .data 
-a: .word 0x00F3,0x0053,0
+a: .half 0x00F3,0x0053,0
 
 .text
 la x10,a
