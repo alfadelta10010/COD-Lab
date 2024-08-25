@@ -29,4 +29,4 @@ c: .byte 0x82, 0x6A
     lbu x22, 0(x21)     
     lbu x23, 1(x21)     
     add x24, x22, x23   
-    sb x24, 2(x21)      # Store result into address c[2]
+    sb x24, 2(x21)     
