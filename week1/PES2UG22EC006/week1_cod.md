@@ -1,5 +1,5 @@
 # Program 1: 
-### Statement: Write an assembly language for addition of 2 words
+### Statement: Write an assembly language for addition of 2 word
 
 ### Name of file:
 week1.1.s
@@ -21,8 +21,7 @@ week1.1.s
 - 0x10000000 - 0x12345678
 
 # Program 2: 
-### Statement: Write an assembly program for addition of 2 half words.
-
+### Statement: Write an assembly program for addition of 2 half words
 ### Name of file:
 week1.2.s
 
