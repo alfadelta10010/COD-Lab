@@ -1,6 +1,6 @@
 #Program 1:Write an Assembly Program for the following C code:
 .data
-a: .half 0x0000,0x1000,0x0200,0x0030,0x0001,0x0101,0x2010,0x0010,0x1023,0x2011,0x001
+c: .half 0x0000,0x1000,0x0200,0x0030,0x0001,0x0101,0x2010,0x0010,0x1023,0x2011,0x0001,0x0010
 .text
 la x1,a
 lh x2,0(x1)
@@ -36,6 +36,23 @@ lh x21,20(x1)
 add x22,x21,x20
 sh x22,18(x1)
 #added sum is stored in register x20
+
+.data
+c: .half 0x0000,0x1000,0x0200,0x0030,0x0001,0x0101,0x2010,0x0010,0x1023,0x2011,0x0001,0x0010
+.text
+la x10,c
+addi x13,x0,0 #i
+addi x12,x0,0
+addi x11,x0,11
+back:
+    lhu x14,0(x10)
+    add x12,x12,x14
+    addi x10,x10,2
+    addi x13,x13,1
+blt x13,x11,back
+sh x12,20(x10)
+
+
 #-----------------------------------------------------------------------------
 
 #PROGRAM 2. Write an Assembly Program for addition of 2 64-bit numbers on RV32I 
@@ -52,5 +69,4 @@ lw x15,12(x10)
 add x16,x15,x14
 add x17,x16,x18
 sltu x19,x17,x16 #to check for carry
-
 
