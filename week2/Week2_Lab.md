@@ -2,14 +2,15 @@
 ### Statement: 
 Write an Assembly Program for the following C code:
 
-main() {
-	unsigned short int a[11] = {0x1234, 0x5678, ...}, h;
-	h = 0;
-	for(i = 0; i < 10; i++)
-	{
-		h = h + a[i];
-	}
-	a[10] = h;
+main() \
+{\
+	unsigned short int a[11] = {0x1234, 0x5678, ...}, h;\
+	h = 0;\
+	for(i = 0; i < 10; i++)\
+	{\
+		h = h + a[i];\
+	}\
+	a[10] = h;\
 }
 
 ### Name of file:
@@ -24,24 +25,24 @@ Finally, the sum variable h stored in
 t0 is stored in the 11th element of the array a using the sh instruction
 
 ### Register Mapping
-x10 : 0x10000000
-x11 : 0xffffffff
-x12 : 0xffffffff
-x13 : 0xffffffff
-x14 : 0xffffffff
-x15 : 0xfffffffe
-x16 : 0x00000001
-x17 : 0xfffffffe
-x18 : 0x00000001
+x10 : 0x10000000\
+x11 : 0xffffffff\
+x12 : 0xffffffff\
+x13 : 0xffffffff\
+x14 : 0xffffffff\
+x15 : 0xfffffffe\
+x16 : 0x00000001\
+x17 : 0xfffffffe\
+x18 : 0x00000001\
 x19 : 0xffffffff
 
 ### Data Mapping
-0x10000018 : 0x00000001
-0x10000014 : 0xffffffff
-0x10000010 : 0xfffffffe
-0x1000000c : 0xffffffff
-0x10000008 : 0xffffffff
-0x10000004 : 0xffffffff
+0x10000018 : 0x00000001\
+0x10000014 : 0xffffffff\
+0x10000010 : 0xfffffffe\
+0x1000000c : 0xffffffff\
+0x10000008 : 0xffffffff\
+0x10000004 : 0xffffffff\
 0x10000000 : 0xffffffff
 
 
@@ -59,22 +60,22 @@ It adds lower 32 bits and checks for a carry,then adds the upper 32 bits includi
 The result combining the lower and upper 32 bits ,is stored back into the memory.
 
 ### Register mapping
-x2 : 0xfffffffe
-x3 : 0xffffffff
-x5 : 0xfffffffe
-x6 : 0xffffffff
-x7 : 0xffffffff
-x8 : 0xffffffff
-x9 : 0xffffffff
-x10 : 0x10000000
-x11 : 0x00000001
+x2 : 0xfffffffe\
+x3 : 0xffffffff\
+x5 : 0xfffffffe\
+x6 : 0xffffffff\
+x7 : 0xffffffff\
+x8 : 0xffffffff\
+x9 : 0xffffffff\
+x10 : 0x10000000\
+x11 : 0x00000001\
 x12 : 0x00000001
 
 ### Data Mapping
-0x10000018 : 0x00000001
-0x10000014 : 0xffffffff
-0x10000010 : 0xfffffffe
-0x1000000c : 0xffffffff
-0x10000008 : 0xffffffff
-0x10000004 : 0xffffffff
+0x10000018 : 0x00000001\
+0x10000014 : 0xffffffff\
+0x10000010 : 0xfffffffe\
+0x1000000c : 0xffffffff\
+0x10000008 : 0xffffffff\
+0x10000004 : 0xffffffff\
 0x10000000 : 0xffffffff
