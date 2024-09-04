@@ -1,31 +1,20 @@
 # PROGRAM 1
-.data 
+.data
 a: .half 0x1234, 0x5678, 0x0910, 0x1213, 0x1415, 0x1617, 0x1819, 0x2021, 0x2223, 0x2425, 0x2627
 
-.text 
-la x2, a
-lh x5,0(x2)
-lh x6,2(x2)
-lh x7,4(x2)
-lh x8,6(x2)
-lh x9,8(x2)
-lh x10,10(x2)
-lh x11,12(x2)
-lh x12,14(x2)
-lh x13,16(x2)
-lh x14,18(x2)
-lh x15,20(x2)
-add x18,x0,x5
-add x18,x18,x6
-add x18,x18,x7
-add x18,x18,x8
-add x18,x18,x9
-add x18,x18,x10
-add x18,x18,x11
-add x18,x18,x12
-add x18,x18,x13
-add x18,x18,x14
-sh x18,18(x2)
+.text
+la x10,a
+addi x18,x0,0 # i
+addi x19,x0,0 # h
+addi x25,x0,10
+back:
+    lh x20,0(x10)
+    add x19,x19,x20
+    addi x10,x10,2
+    addi x18,x18,1
+    blt x18,x25,back
+la x10,a    # To get x10 value back to base address of array a
+sw x19,18(x10)
 
 
 # PROGRAM 2
