@@ -12,6 +12,7 @@ lw x14, 4(x10)
 lw x15, 12(x10)
 add x16, x14, x15 # Add 2nd half
 add x17, x16, x20 # Addition of carry
+sltu x21, x16, x15 # 2nd Carry
 
 sw x13, 20(x10)
 sw x17, 24(x10)

@@ -41,7 +41,7 @@ add x11, x0, x0
 add x12, x0, x0
 addi x20, x0, 10
 add_loop:
-    lhu x12, 0(x10)
+	lhu x12, 0(x10)
 	add x11, x11, x12
 
 	addi x10, x10, 2
