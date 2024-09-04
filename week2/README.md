@@ -1,6 +1,6 @@
-# Week 2 - Assignment
+# Program 1: 
+### Statement: Write an Assembly Program for addition of 2 64-bit numbers on RV32I 
 
-- Upload the three assembly programs written last lab class, in `.s` format. The problem statements are as follows:
 	1. Write an Assembly Program for the following C code:
 ```c
 main() {
@@ -13,31 +13,54 @@ main() {
 	a[10] = h;
 }
 ```
-	2. Write an Assembly Program for addition of 2 64-bit numbers on RV32I 
 
-- Ensure your code has comments for the statements
-- While submitting, you are required to make a Markdown file with the following contents. You are required to submit your observations in the same manner
-
-- File name: Week2_Lab.md
-```markdown
-# Program 1: 
-### Statement: <Enter the program statement>
 
 ### Name of file:
-<Enter the name of the file where your code is stored>
+src/l2p1.s
 
 ### Observation - Single Cycle
-- <Write 3 statements explaining what the assembly program is doing>
+- The hard part of this code was making the array which I don't think was part of the question
+- Errors came up due to the signed nature of lh while adding the array. Therefore had to use lhu instruction
+- It took a total of 236 cycles to complete execution with cpi and pci of 1
  
 ### Register Mapping
-- **<Register Number Used>:** <Value stored>
+- **x11:** 0x00042d5c
+- rest are dynamic
 
 ### Data Mapping
-- **<Memory Address>:** <Value stored>
+- **0x10000000:** 0x12345678
+- **0x10000004:** 0x9abcdef0
+- **0x10000008:** 0x12345678
+- **0x1000000c:** 0x9abcdef0
+- **0x10000010:** 0x12345678
 
-...
-```
-- Repeat the above layout structure for each program, in the same file
 
-- **Note**: Open a PR to submit
-:warning: **Deadline**: 11:59 PM, Saturday, 24th August, 2024
+
+---
+
+# Program 2: 
+### Statement: Write an Assembly Program for addition of 2 64-bit numbers on RV32I 
+
+### Name of file:
+src/l2p2.s
+
+### Observation - Single Cycle
+- Needed 2 32 bit registers for this operations
+- After adding the 1st half of the each dwords and storing their carry in a separate register, we add the next word.
+- The carry is then propogated to the second sum
+ 
+### Register Mapping
+- **x11:** 0x80101023
+- **x12:** 0x00104035
+- **x14:** 0x80003012
+- **x15:** 0x80104036
+- **x20:** 0x00000001
+
+### Data Mapping
+- **0x10000000:** 0x80101023
+- **0x10000004:** 0x80003012
+- **0x10000008:** 0x80003012
+- **0x1000000c:** 0x00101023
+
+- **0x10000014:** 0x00104035
+- **0x10000018:** 0x80104036
