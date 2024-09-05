@@ -1,0 +1,21 @@
+#Write assembly program to convert little endin to big endin using loop/label
+
+.data 
+a: .word 0x12345678
+
+.text
+la x10,a  #load the base address of a
+lw x11,0(x10) #load word in x11
+addi x12,x0,3  #initialze loop counter
+
+loop:
+    andi x13,x11,0xFF  #mask the lsbyte of the given word
+    add x14,x14,x13 #store it in x14
+    slli x14,x14,8 #shift the lsbyte left by byte position 
+    srli x11,x11,8 #shift word in x11 right by byte position to access the next byte
+    addi x12,x12,-1 #decrement the loop counter by 1
+    bne x12,x0,loop #run loop until x12 is 0
+    
+    add x14,x14,x11 # add 0x78563400 and 0x00000012
+    
+    sw x14,4(x10) # store 0x78563412 in data memory.
