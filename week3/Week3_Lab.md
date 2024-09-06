@@ -18,5 +18,5 @@
     Address       Word 
     0x10000000  0x12345678
 
-- **Note**: Open a PR to submit
+
 
