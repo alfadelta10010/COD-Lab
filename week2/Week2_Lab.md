@@ -1,3 +1,36 @@
+# Program 1: 
+### Statement: Write an Assembly Program for the given C code
+
+### Name of file:
+Week2_Lab.s
+
+### Observation - Single Cycle
+- The code correctly handles the memory addresses by incrementing the address pointer (`x10`) by 2 in each iteration to point to the next half-word in the array `a`, ensuring sequential processing of the half-words.
+
+- The loop iterates 10 times, as controlled by the counter `x11`, which is compared to `x12` (the loop limit). The loop exits when the counter reaches 10, effectively summing the first 10 half-words.
+
+- After the loop concludes, the final accumulated value of `h` is stored in the 11th element of the array `a` (located at address `20(a)`), demonstrating the correct use of the calculated sum in subsequent operations.
+ 
+### Register Mapping
+- **x2:** 0x7ffffff0
+- **x3:** 0x10000000
+- **x10:** 0x10000014
+- **x11:** 0x0000000a
+- **x12:** 0x0000000a
+- **x13:** 0x00000000
+- **x14:** 0x000068ac
+- **x15:** 0x10000016
+
+
+### Data Mapping
+- **0x00000000:** 10000517
+- **0x00000004:** 00050513
+- **0x00000008:** 10000797
+
+
+
+
+#Program 2
 #Write an Assembly Program for addition of 2 64-bit numbers on RV32I 
 
 ### Name of file:
