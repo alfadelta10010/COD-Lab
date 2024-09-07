@@ -3,7 +3,7 @@
  Convert a 32-bit value from Little Endian to Big Endian format using RISC-V assembly
 
 ### Name of file:
- program1.s
+COD-Lab/week3/program1.s
 
 ### Observation - Single Cycle
 - 1) loading the data of array a,b,c to the respective registers x10,x11,x17
