@@ -1,6 +1,6 @@
 Program 1:
 Statement: Write an assembly language for addition of 2 half words and if carry generated then storing it in the memory.
-Name of file:
+Name of file:<week-2 Q1.s>
 
 Observation - Single Cycle
 In this program we first load two numbers into registers and add them and if any carry generated then we store that carry in another register.
@@ -18,7 +18,7 @@ Data Mapping
 
 Program 2:
 Statement: Write an assembly language for addition of 2 words and if carry generated then store it in the memory.
-Name of file:
+Name of file:<week-2 Q2.s>
 Observation - Single Cycle
 In this program we first load two numbers into registers and add them and if any carry generated then we store that carry in another register.
 Register Mapping
