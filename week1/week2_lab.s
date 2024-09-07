@@ -8,34 +8,34 @@ la x2,a
 lh x8,0(x2)
 add x3,x0,x8
 
-lh x9,2(x2)
+lhu x9,2(x2)
 add x3,x3,x9
 
-lh x10,4(x2)
+lhu x10,4(x2)
 add x3,x3,x10
 
-lh x11,6(x2)
+lhu x11,6(x2)
 add x3,x3,x11
 
-lh x12,8(x2)
+lhu x12,8(x2)
 add x3,x3,x12
 
-lh x13,10(x2)
+lhu x13,10(x2)
 add x3,x3,x13
 
-lh x14,12(x2)
+lhu x14,12(x2)
 add x3,x3,x14
 
-lh x15,14(x2)
+lhu x15,14(x2)
 add x3,x3,x15
 
-lh x16,16(x2)
+lhu x16,16(x2)
 add x3,x3,x16
 
-lh x17,18(x2)
+lhu x17,18(x2)
 add x3,x3,x16
 
-lh x18,20(x2)
+lhu x18,20(x2)
 add x3,x3,x16
 sh x3,22(x2)
 
@@ -55,7 +55,8 @@ add x20, x18, x19
 sw x20, 0(x12)
 lw x18, 4(x10)
 lw x19, 4(x11)
-sltu x21, x20, x19  
+sltu x22, x20, x18  
+lw x22,0(x22)
 add x20, x18, x19
 add x20, x20, x21
 sw x20, 4(x12)
