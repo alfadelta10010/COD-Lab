@@ -9,7 +9,7 @@
 	a[10] = h;
 }
 ### Name of file:
-2lab1.s
+lab2_1.s
 ### Observation - Single Cycle
 initializing array of data and assigning values for array elements and performing addition operation as given in above c code for each elements of array  using assembly instructions and then store it
 
