@@ -12,6 +12,7 @@ back:
     slli x14, x14, 8     # Shift the value in x14 left by 8 bits (multiply by 256)
     srli x11, x11, 8     # Shift the value in x11 right by 8 bits (discard least significant byte)
     addi x12, x12, -1    # Decrement x12 by 1
+     # chumma
      
 bnez x12, back  # If x12 is not zero, jump back to label 'back'
 andi x15, x11, 0xFF  # Extract the least significant byte of x11 and store in x15
