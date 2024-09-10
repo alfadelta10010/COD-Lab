@@ -2,7 +2,7 @@
 ### Statement: Write an Assembly Program for addition of 2 words
 
 ### Name of file:
-/COD-Lab/week1/Lab1_Programs/add_words.s
+/COD-Lab/week1/PES2UG22EC027/Lab1_Programs/add_words.s
 
 ### Observation - Single Cycle
 - a is the variable of word size.

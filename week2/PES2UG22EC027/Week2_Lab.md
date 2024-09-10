@@ -11,7 +11,7 @@ main() {
 }
 
 ### Name of file:
-/COD-Lab/week2/LAB2/add_array_h.s
+/COD-Lab/week2/PES2UG22EC027/LAB2/add_array_h.s
 
 ### Observation - Single Cycle
 - a is declared as half with 11 elements 0x01 -- 0x0a and last a[10] as zero and h = 0x00

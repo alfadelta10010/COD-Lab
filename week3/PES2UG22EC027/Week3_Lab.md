@@ -2,8 +2,7 @@
 ### Statement: Convert a 32-bit value from Little Endian to Big Endian format using RISC-V assembly
 
 ### Name of file:
-Little_Big_Endian.s
-week3/MYFILES/Little_Big_Endian.s
+COD-Lab/week3/PES2UG22EC027/Little_Big_Endian.s
 
 ### Observation - Single Cycle
 - First data is loaded from memory to x2
