@@ -16,10 +16,12 @@ loop1: # outer loop
 		addi x10, x10 ,1 # Goto next element
 		bne x10, x20, loop2 # Loop until it reaches final address
 
-    la x10, a # Reset address
+	addi x20, x20, -1 # reduce cycle count by not check the last elements
+
+    la x10, a # Reset address or go back to beginning of array
     addi x1, x1, 1 # Outer counter
     bne x1, x21, loop1 # Loop until all indexes covered
-	j exit
+    j exit
 
 swap:
     sb x11, 1(x10)

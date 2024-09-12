@@ -5,10 +5,12 @@
 bigendian.s
 
 ### Observation - Single Cycle
-- <Write 3 statements explaining what the assembly program is doing>
+- It basically windows the most significant bytes and extracts them
+- It is then placed into the least target memory
+- This is repeated by left shifting the source memory and right shifting the target memory
  
 ### Register Mapping
-- **<Register Number Used>:** <Value stored>
+- **:** <Value stored>
 
 ### Data Mapping
 - **<Memory Address>:** <Value stored>
