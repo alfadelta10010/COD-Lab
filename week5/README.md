@@ -1,6 +1,6 @@
 # Week 5 - Assembly Assignment
 
-- Upload the three assembly programs written last lab class, in `.s` format. The problem statements are as follows:
+- Upload the two assembly programs written last lab class, in `.s` format. The problem statements are as follows:
 	1. Write an assembly program to check whether a given number in an array of elements is divisible by 9
 	2. Write an Assembly Program for the following C code:
 	```c

@@ -1,6 +1,6 @@
 # Week 3 - Assembly Assignment
 
-- Upload the code in `.s` format. The problem statements are as follows:
+- Upload the two assembly programs written last lab class, in `.s` format. The problem statements are as follows:
 	1. Write an assembly program to check if a number is a 2 out of 5 number
 	2. Write an assembly program to encode a number using Hamming code.
 - Ensure your code has comments for the statements

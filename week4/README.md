@@ -1,6 +1,6 @@
 # Week 4 - Assembly Assignment
 
-- Upload the three assembly programs written last lab class, in `.s` format. The problem statements are as follows:
+- Upload the two assembly programs written last lab class, in `.s` format. The problem statements are as follows:
 	1. Write an assembly program to find whether a given string is a palindrome or not, using stack operations
 	2. Write an assembly program to search a given number in an array
 - Ensure your code has comments for the statements
