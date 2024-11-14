@@ -1,5 +1,5 @@
 # Week 6 - SystemVerilog Assignment
-- Upload the five SystemVerilog programs written last lab class, in `.sv` format. The problem statements are as follows:
+- Upload the SystemVerilog programs written last lab class, in `.sv` format. The problem statements are as follows:
 	1. Write a SV program for Asynchronous Reset Flip Flop
 	2. Write a SV program for Synchronous Reset Flip Flop
 	3. Write a SV program for 3:1 MUX
