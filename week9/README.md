@@ -2,6 +2,7 @@
 - Upload the five SystemVerilog programs written last lab class, in `.sv` format. The problem statements are as follows:
 	1. Write a SV program for Memory Access & Writeback Stage
 	2. Write a SV program for Data memory
+	3. Write a SV program for Control units
 - Ensure your code has comments for the statements
 - While submitting, you are required to make a Markdown file with the following contents. You are required to submit your observations in the same manner
 
@@ -26,4 +27,4 @@
 - Screenshot of Vivado RTL view for each program, saved as `program1.png`, `program2.png`, etc
 	- In the markdown file, you need to put the correct name of the image in the `()` brackets specified.
 
-:warning: **Deadline**: 11:59 PM, Saturday, 16th November, 2024
+:warning: **Deadline**: 11:59 PM, Sunday, 17th November, 2024
