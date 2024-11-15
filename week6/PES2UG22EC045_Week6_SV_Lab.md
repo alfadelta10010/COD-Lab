@@ -5,9 +5,9 @@ Write a SV program for Asynchronous Reset Flip Flop
 [program1.sv](./program1.sv)
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen][def]
+![Screenshot of RTL view, full screen][def1]
 
-[def]: <Asynchronous Reset Flip Flop.png>
+[def1]: <Asynchronous Reset Flip Flop.png>
 
 
 
@@ -18,9 +18,9 @@ Write a SV program for Synchronous Reset Flip Flop
 [program2.sv](./program2.sv)
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen][def1]
+![Screenshot of RTL view, full screen][def2]
 
-[def1]: <Synchronous Reset Flip Flop.png>
+[def2]: <Synchronous Reset Flip Flop.png>
 
 
 
@@ -31,9 +31,9 @@ Write a SV program for 3:1 MUX
 [program2.sv](./program3.sv)
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen][def2]
+![Screenshot of RTL view, full screen][def3]
 
-[def2]: <3to1.png>
+[def3]: <3to1.png>
 
 
 
@@ -44,9 +44,9 @@ Write a SV program for 2:1 MUX
 [program2.sv](./program4.sv)
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen][def3]
+![Screenshot of RTL view, full screen][def4]
 
-[def3]: <2to1.png>
+[def4]: <2to1.png>
 
 
 
@@ -57,9 +57,9 @@ Write a SV program for Adder
 [program2.sv](./program5.sv)
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen][def1]
+![Screenshot of RTL view, full screen][def5]
 
-[def1]: <Adder.png>
+[def5]: <Adder.png>
 
 
 
@@ -70,9 +70,9 @@ Write a SV program for Instruction Fetch Stage
 [program2.sv](./program6.sv)
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen][def2]
+![Screenshot of RTL view, full screen][def6]
 
-[def2]: <Instruction Fetch Stage.png>
+[def6]: <Instruction Fetch Stage.png>
 
 
 
@@ -83,6 +83,6 @@ Write a SV program for Instruction Memory
 [program2.sv](./program7.sv)
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen][def3]
+![Screenshot of RTL view, full screen][def7]
 
-[def3]: <Instruction Memory.png>
+[def7]: <Instruction Memory.png>
