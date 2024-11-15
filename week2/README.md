@@ -52,4 +52,4 @@
 - Screenshot of RIPES for each program, saved as `program1.png`, `program2.png`, etc
 	- In the markdown file, you need to put the correct name of the image in the `()` brackets specified.
 
-:warning: **Deadline**: 11:59 PM, Saturday, 16th November, 2024
+:warning: **Deadline**: 11:59 PM, Sunday, 17th November, 2024
