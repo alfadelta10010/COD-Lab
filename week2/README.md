@@ -1,66 +1,56 @@
+# Week 2 - Assembly Assignment
+
+- Upload the two assembly programs written last lab class, in `.s` format. The problem statements are as follows:
+	1. Write an Assembly Program for:
+		1. addition of N words
+		2. addition of N half words
+		3. addition of N bytes
+	2. Write an Assembly program for calculating  `x = (y + m) - (L - D) + (Z + C) - D`, where `x`, `y`, `m`, `L`, `D`, `Z`, `C` are elements of 32-bits wide
+
+- Ensure your code has comments for the statements
+- While submitting, you are required to make a Markdown file with the following contents. You are required to submit your observations in the same manner
+
+- File name: `<SRN>_Week2_Lab.md` (eg: `PES2UG21EC003_Week2_Lab.md`)
+```markdown
 # Program 1: 
-### Statement: Write an Assembly Program for addition of 2 64-bit numbers on RV32I 
-
-	1. Write an Assembly Program for the following C code:
-```c
-main() {
-	unsigned short int a[11] = {0x1234, 0x5678, ...}, h;
-	h = 0;
-	for(i = 0; i < 10; i++)
-	{
-		h = h + a[i];
-	}
-	a[10] = h;
-}
-```
-
+### Statement: <Enter the program statement>
 
 ### Name of file:
-src/l2p1.s
+<Enter the name of the file>
+
+### Observation - Explanation
+- <Write 3 statements explaining what the assembly program is doing>
 
 ### Observation - Single Cycle
-- The hard part of this code was making the array which I don't think was part of the question
-- Errors came up due to the signed nature of lh while adding the array. Therefore had to use lhu instruction
-- It took a total of 236 cycles to complete execution with cpi and pci of 1
- 
+- **Cycles:** <Enter the info from RIPES> 
+- **Frequency:** <Enter the info from RIPES>
+- **CPI:** <Enter the info from RIPES>
+- **IPC:** <Enter the info from RIPES>
+
+### Observation - 5 Stage
+- **Cycles:** <Enter the info from RIPES> 
+- **Frequency:** <Enter the info from RIPES>
+- **CPI:** <Enter the info from RIPES>
+- **IPC:** <Enter the info from RIPES>
+
+### Memory Mapping
+- **<Register Number Used>:** <Value Stored>
+
 ### Register Mapping
 - **x11:** 0x00042d5c
 - rest are dynamic
 
-### Data Mapping
-- **0x10000000:** 0x12345678
-- **0x10000004:** 0x9abcdef0
-- **0x10000008:** 0x12345678
-- **0x1000000c:** 0x9abcdef0
-- **0x10000010:** 0x12345678
+### Snapshot
+![Screenshot of RIPES window](<program1.png>)
+```
 
+- Repeat the above layout for each question
+- **Note**: Open a PR to submit
 
+### What should be included in this folder:
+- `program1.s`, `program2.s` files
+- `<SRN>_Week2_Lab.md` Markdown file, containing your observations for each program
+- Screenshot of RIPES for each program, saved as `program1.png`, `program2.png`, etc
+	- In the markdown file, you need to put the correct name of the image in the `()` brackets specified.
 
----
-
-# Program 2: 
-### Statement: Write an Assembly Program for addition of 2 64-bit numbers on RV32I 
-
-### Name of file:
-src/l2p2.s
-
-### Observation - Single Cycle
-- Needed 2 32 bit registers for this operations
-- After adding the 1st half of the each dwords and storing their carry in a separate register, we add the next word.
-- The carry is then propogated to the second sum
- 
-### Register Mapping
-- **x11:** 0x80101023
-- **x12:** 0x00104035
-- **x14:** 0x80003012
-- **x15:** 0x80104036
-- **x20:** 0x00000001
-
-### Data Mapping
-- **0x10000000:** 0x80101023
-- **0x10000004:** 0x80003012
-- **0x10000008:** 0x80003012
-- **0x1000000c:** 0x00101023
-
-- **0x10000014:** 0x00104035
-- **0x10000018:** 0x80104036
+:warning: **Deadline**: 11:59 PM, Sunday, 17th November, 2024
