@@ -8,7 +8,7 @@ Write a SV program for Memory Access & Writeback Stage
 ### RTL Snapshot
 ![Screenshot of RTL view, full screen][def1]
 
-[def1]: Memory-Access_Writeback.png
+[def1]: <Memory-Access_Writeback.png>
 
 
 
@@ -22,4 +22,4 @@ Write a SV program for Data memory
 ### RTL Snapshot
 ![Screenshot of RTL view, full screen][def2]
 
-[def2]: Memory-Access_Writeback.png
+[def2]: <Data_Memory.png>
