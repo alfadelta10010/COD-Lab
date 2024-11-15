@@ -7,7 +7,7 @@ Write a SV program for Instruction Decoder Stage
 ### RTL Snapshot
 ![Screenshot of RTL view, full screen][def]
 
-[def]: <Instruction_Decoder.png>
+[def]: <program1.png>
 
 
 
@@ -20,7 +20,7 @@ Write a SV program for the Decoder
 ### RTL Snapshot
 ![Screenshot of RTL view, full screen][def]
 
-[def]: <Decoder.png>
+[def]: <program2.png>
 
 
 
@@ -33,7 +33,7 @@ Write a SV program for the Register File
 ### RTL Snapshot
 ![Screenshot of RTL view, full screen][def]
 
-[def]: <Register_File.png>
+[def]: <program3.png>
 
 
 
@@ -46,4 +46,4 @@ Write a SV program for the Immediate Unit
 ### RTL Snapshot
 ![Screenshot of RTL view, full screen][def]
 
-[def]: <Immediate_Decoder.png>
+[def]: <program4.png>
