@@ -1,5 +1,5 @@
 # Program 1: 
-### Statement: Write a SV program for Control units
+### Statement: Write a SV program for Control units.
 
 ### Name of file:
 program1.sv

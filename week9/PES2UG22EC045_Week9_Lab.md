@@ -1,6 +1,6 @@
 # Program 1: 
 ### Statement: 
-Write a SV program for Memory Access & Writeback Stage
+Write a SV program for Memory Access & Writeback Stage.
 
 ### Name of file:
 program1.sv
@@ -12,7 +12,7 @@ program1.sv
 
 # Program 2: 
 ### Statement: 
-Write a SV program for Data memory
+Write a SV program for Data memory.
 
 ### Name of file:
 program2.sv
