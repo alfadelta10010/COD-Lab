@@ -18,9 +18,9 @@ Write a SV program for the Decoder
 [program2.sv](./program2.sv)
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen][def]
+![Screenshot of RTL view, full screen][def1]
 
-[def]: <program2.png>
+[def1]: <program2.png>
 
 
 
@@ -31,9 +31,9 @@ Write a SV program for the Register File
 [program2.sv](./program3.sv)
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen][def]
+![Screenshot of RTL view, full screen][def2]
 
-[def]: <program3.png>
+[def2]: <program3.png>
 
 
 
@@ -44,6 +44,6 @@ Write a SV program for the Immediate Unit
 [program2.sv](./program4.sv)
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen][def]
+![Screenshot of RTL view, full screen][def3]
 
-[def]: <program4.png>
+[def3]: <program4.png>
