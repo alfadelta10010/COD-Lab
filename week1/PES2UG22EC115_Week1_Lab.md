@@ -31,6 +31,10 @@ PES2UG22EC115_Week1_Lab.s
 - **0x10000000:** 0x12345678  &ensp; Little Endian
 - **0x10000004:** 0x78563412  &ensp; Big Endian
 
+### Snapshot
+![little2big](https://github.com/user-attachments/assets/76b08735-2096-4a9e-85e5-028c8bc85401)
+
+
 ...
 
 
@@ -78,5 +82,8 @@ PES2UG22EC115_Week1_Lab.s
 - **0x1000000c:** 0xffffffff
 - **0x10000014:** 0x90000122
 - **0x10000018:** 0x10002469
+
+### Snapshot
+![adding64bit](https://github.com/user-attachments/assets/9de90ea5-8e58-4133-acb2-2c5d3b8ceecd)
 
 ...
