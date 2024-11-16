@@ -14,7 +14,8 @@ main() {
 	}
 }
 	```
-- Run the program with RIPES in Single Cycle and 5 stage w/ pipeline modes, and take screenshots
+- Run the program with RIPES in Single Cycle and 5 stage w/ pipeline modes
+- Take screenshots in processor view, with registers, CPI and IPC visible
 - **Note**: Open a PR to submit
 
 ### What should be included in this folder:

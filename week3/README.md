@@ -3,7 +3,8 @@
 - Upload the two assembly programs written last lab class, in `.s` format. The problem statements are as follows:
 	1. Write an assembly program to check if a number is a 2 out of 5 number
 	2. Write an assembly program to encode a number using Hamming code.
-- Run the program with RIPES in Single Cycle and 5 stage w/ pipeline modes, and take screenshots
+- Run the program with RIPES in Single Cycle and 5 stage w/ pipeline modes
+- Take screenshots in processor view, with registers, CPI and IPC visible
 - **Note**: Open a PR to submit
 
 ### What should be included in this folder:

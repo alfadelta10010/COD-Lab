@@ -7,7 +7,8 @@
 		3. addition of N bytes
 	2. Write an Assembly program for calculating  `x = (y + m) - (L - D) + (Z + C) - D`, where `x`, `y`, `m`, `L`, `D`, `Z`, `C` are elements of 32-bits wide
 
-- Run the program with RIPES in Single Cycle and 5 stage w/ pipeline modes, and take screenshots
+- Run the program with RIPES in Single Cycle and 5 stage w/ pipeline modes
+- Take screenshots in processor view, with registers, CPI and IPC visible
 - **Note**: Open a PR to submit
 
 ### What should be included in this folder:
