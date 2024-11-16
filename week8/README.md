@@ -1,8 +1,7 @@
 # Week 8 - SystemVerilog Assignment
-- Upload the five SystemVerilog programs written last lab class, in `.sv` format. The problem statements are as follows:
+- Upload the SystemVerilog programs written last lab class, in `.sv` format. The problem statements are as follows:
 	1. Write a SV program for Instruction Execute Stage
 	2. Write a SV program for the ALU
-- Ensure your code has comments for the statements
 - While submitting, you are required to make a Markdown file with the following contents. You are required to submit your observations in the same manner
 
 - File name: `<SRN>_Week8_Lab.md` (eg: `PES2UG21EC003_Week8_Lab.md`)
