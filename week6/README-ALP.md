@@ -4,7 +4,8 @@
 	1. Write an assembly program to sort an array using bubble sort to sort N-elements
 	2. Write an assembly program to calculate the factorial of a number with & without recursion
 	3. Write an assembly program to do matrix multiplication
-- Run the program with RIPES in Single Cycle and 5 stage w/ pipeline modes, and take screenshots
+- Run the program with RIPES in Single Cycle and 5 stage w/ pipeline modes
+- Take screenshots in processor view, with registers, CPI and IPC visible
 - **Note**: Open a PR to submit
 
 ### What should be included in this folder:
