@@ -10,18 +10,15 @@ It loops through each bit of the number, shifting it right and checking if it's 
 If exactly two bits are set to 1, the program sets x10 to 1, indicating it's a 2-out-of-5 number; otherwise, it sets x10 to 0.
 
 ### Observation - Single Cycle
+![Untitled](https://github.com/user-attachments/assets/bb4420f2-ef3c-4db3-a2ba-a0269fd17e7f)
+
 
 
 ### Observation - 5 Stage
+![Untitled](https://github.com/user-attachments/assets/1a592e3e-51ed-493a-85f3-7c2724cea00c)
 
 
-### Memory Mapping
 
-
-### Register Mapping
-
-
-### Snapshot
 
 
 
@@ -38,17 +35,12 @@ It calculates three parity bits (p1, p2, p3) based on the data bits using XOR op
 The program combines the data bits and parity bits into a 7-bit Hamming code and exits.
 
 ### Observation - Single Cycle
+![Untitled](https://github.com/user-attachments/assets/29ac339a-0e98-4787-8697-8e1928cf5be1)
 
 
 ### Observation - 5 Stage
 
+![Untitled](https://github.com/user-attachments/assets/65bee3c7-0b65-4c67-b851-8501630a7020)
 
-### Memory Mapping
-
-
-### Register Mapping
-
-
-### Snapshot
 
 
