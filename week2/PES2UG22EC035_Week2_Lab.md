@@ -1,5 +1,10 @@
 # Program 1
-### Statement: 
+### Statement: Write an Assembly Program for:
+
+    addition of N words
+    addition of N half words
+    addition of N bytes
+
 
 ### Name of file:
 p1.s
@@ -31,6 +36,38 @@ p1.s
 ### Snapshot
 ![image](https://github.com/user-attachments/assets/722b5f3f-40b4-40ee-91a0-11ffde459f8c)
 ![image](https://github.com/user-attachments/assets/a995b986-6959-4dfc-8779-71aa13241220)
+
+
+# Program 2: 
+### Statement:Write an Assembly program for calculating x = (y + m) - (L - D) + (Z + C) - D, where x, y, m, L, D, Z, C are elements of 32-bits wide
+
+### Name of file:
+p2.s
+
+### Observation - Explanation
+The program loads all values (y, m, L, D, Z, C) into registers.
+It computes each part of the equation step-by-step and combines them in the correct order.
+The result x is stored in register x15 before the program exits.
+
+### Observation - Single Cycle
+![image](https://github.com/user-attachments/assets/a9c69b28-753b-4602-a0c2-1172f9bee4f0)
+
+
+### Observation - 5 Stage
+![image](https://github.com/user-attachments/assets/acb2030d-9cf9-4e43-86df-90e1f4931602)
+
+
+### Memory Mapping
+![image](https://github.com/user-attachments/assets/3cc4fff6-7647-4217-a0c9-3053c8c9e89d)
+
+
+### Register Mapping
+![image](https://github.com/user-attachments/assets/545b2444-7265-4856-9f74-5af87735eff2)
+
+
+### Snapshot
+![image](https://github.com/user-attachments/assets/f30f3944-5cb8-4875-87ef-7da5facbb3e0)
+
 
 
 
