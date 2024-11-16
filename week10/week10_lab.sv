@@ -1,75 +1,170 @@
 week 10 
 1  
-module ControlUnit(
-    input  logic [6:0] opcode,         // Opcode from the instruction
-    input  logic [2:0] funct3,         // Function code (for ALU, memory)
-    input  logic [6:0] funct7,         // Additional function code (for ALU)
-    output logic       alu_src,        // ALU source (1 = immediate, 0 = register)
-    output logic       mem_read,       // Memory read enable signal
-    output logic       mem_write,      // Memory write enable signal
-    output logic       reg_write,      // Register write enable signal
-    output logic       branch,         // Branch control signal
-    output logic       memToReg,       // Memory to register control signal
-    output logic [3:0] alu_op          // ALU operation code
+module control_unit(
+    input logic clk,                  // Clock signal
+    input logic reset,                // Reset signal
+    input logic [5:0] opcode,         // Opcode field of the instruction (6 bits)
+    input logic [2:0] funct3,         // funct3 field (3 bits)
+    input logic [6:0] funct7,         // funct7 field (7 bits)
+    output logic MemRead,             // Memory read signal
+    output logic MemWrite,            // Memory write signal
+    output logic RegWrite,            // Register write signal
+    output logic ALUSrc,              // ALU source signal (whether to use immediate or register)
+    output logic RegDst,              // Register destination signal (which register to write)
+    output logic MemToReg,            // Memory to register signal (for load instructions)
+    output logic Branch,              // Branch signal (for branch instructions)
+    output logic Jump,                // Jump signal (for jump instructions)
+    output logic [1:0] ALUOp          // ALU operation code (e.g., add, subtract, etc.)
 );
 
-always @(*) begin
-    // Default control signals to 'x' for unknown state
-    alu_src   = 'x;
-    mem_read  = 'x;
-    mem_write = 'x;
-    reg_write = 'x;
-    branch    = 'x;
-    memToReg  = 'x;
-    alu_op    = 4'bxxxx;  // Unknown ALU operation by default
-
-    // Decode based on opcode to set the control signals
-    case (opcode)
-        7'b0110011: begin // R-type (register-register ALU operations)
-            alu_src   = 1'b0;  // Use registers as ALU inputs
-            reg_write = 1'b1;  // Write the result to a register
-            memToReg  = 1'b0;  // Use ALU result, not memory
-            alu_op    = 4'b0010; // Assume some ALU operation code for ADD
+    // Control signal initialization for Stage 1 (Instruction Fetch)
+    logic [1:0] stage;  // Control stage (0 = IF, 1 = ID/EX)
+    
+    // Stage 1: Instruction Fetch (IF)
+    always_ff @(posedge clk or negedge reset) begin
+        if (!reset) begin
+            stage <= 2'b00;  // Initial stage: IF
+        end else begin
+            case (stage)
+                2'b00: stage <= 2'b01;  // After fetch, move to decode/execute
+                2'b01: stage <= 2'b00;  // After decode/execute, move back to fetch
+            endcase
         end
-
-        7'b0010011: begin // I-type (ALU immediate operations)
-            alu_src   = 1'b1;  // Use immediate as ALU input
-            reg_write = 1'b1;  // Write the result to a register
-            memToReg  = 1'b0;  // Use ALU result, not memory
-            alu_op    = 4'b0011; // ALU operation for ADDI or similar
+    end
+    
+    // Stage 2: Control signals for Decode/Execute (ID/EX)
+    always_ff @(posedge clk or negedge reset) begin
+        if (!reset) begin
+            MemRead     <= 0;
+            MemWrite    <= 0;
+            RegWrite    <= 0;
+            ALUSrc      <= 0;
+            RegDst      <= 0;
+            MemToReg    <= 0;
+            Branch      <= 0;
+            Jump        <= 0;
+            ALUOp       <= 2'b00;
+        end else begin
+            case (opcode)
+                6'b000000: begin  // R-type (ADD, SUB, AND, OR, etc.)
+                    case (funct3)
+                        3'b000: begin  // ADD or SUB (determined by funct7)
+                            if (funct7 == 7'b0000000) begin  // ADD
+                                MemRead     <= 0;
+                                MemWrite    <= 0;
+                                RegWrite    <= 1;
+                                ALUSrc      <= 0;
+                                RegDst      <= 1;
+                                MemToReg    <= 0;
+                                Branch      <= 0;
+                                Jump        <= 0;
+                                ALUOp       <= 2'b10;  // ADD operation
+                            end else if (funct7 == 7'b0100000) begin  // SUB
+                                MemRead     <= 0;
+                                MemWrite    <= 0;
+                                RegWrite    <= 1;
+                                ALUSrc      <= 0;
+                                RegDst      <= 1;
+                                MemToReg    <= 0;
+                                Branch      <= 0;
+                                Jump        <= 0;
+                                ALUOp       <= 2'b10;  // SUB operation
+                            end
+                        end
+                        3'b111: begin  // AND
+                            MemRead     <= 0;
+                            MemWrite    <= 0;
+                            RegWrite    <= 1;
+                            ALUSrc      <= 0;
+                            RegDst      <= 1;
+                            MemToReg    <= 0;
+                            Branch      <= 0;
+                            Jump        <= 0;
+                            ALUOp       <= 2'b11;  // AND operation
+                        end
+                        3'b110: begin  // OR
+                            MemRead     <= 0;
+                            MemWrite    <= 0;
+                            RegWrite    <= 1;
+                            ALUSrc      <= 0;
+                            RegDst      <= 1;
+                            MemToReg    <= 0;
+                            Branch      <= 0;
+                            Jump        <= 0;
+                            ALUOp       <= 2'b11;  // OR operation
+                        end
+                        default: begin
+                            // Handle other funct3 cases (e.g., XOR, SLT, etc.)
+                            MemRead     <= 0;
+                            MemWrite    <= 0;
+                            RegWrite    <= 0;
+                            ALUSrc      <= 0;
+                            RegDst      <= 0;
+                            MemToReg    <= 0;
+                            Branch      <= 0;
+                            Jump        <= 0;
+                            ALUOp       <= 2'b00;
+                        end
+                    endcase
+                end
+                6'b100011: begin  // LW (Load Word)
+                    MemRead     <= 1;
+                    MemWrite    <= 0;
+                    RegWrite    <= 1;
+                    ALUSrc      <= 1;
+                    RegDst      <= 0;
+                    MemToReg    <= 1;
+                    Branch      <= 0;
+                    Jump        <= 0;
+                    ALUOp       <= 2'b00;  // ALU operation: Add (for address calculation)
+                end
+                6'b101011: begin  // SW (Store Word)
+                    MemRead     <= 0;
+                    MemWrite    <= 1;
+                    RegWrite    <= 0;
+                    ALUSrc      <= 1;
+                    RegDst      <= 0;
+                    MemToReg    <= 0;
+                    Branch      <= 0;
+                    Jump        <= 0;
+                    ALUOp       <= 2'b00;  // ALU operation: Add (for address calculation)
+                end
+                6'b000100: begin  // BEQ (Branch if Equal)
+                    MemRead     <= 0;
+                    MemWrite    <= 0;
+                    RegWrite    <= 0;
+                    ALUSrc      <= 0;
+                    RegDst      <= 0;
+                    MemToReg    <= 0;
+                    Branch      <= 1;
+                    Jump        <= 0;
+                    ALUOp       <= 2'b01;  // ALU operation: Subtract (for comparison)
+                end
+                6'b000010: begin  // J (Jump)
+                    MemRead     <= 0;
+                    MemWrite    <= 0;
+                    RegWrite    <= 0;
+                    ALUSrc      <= 0;
+                    RegDst      <= 0;
+                    MemToReg    <= 0;
+                    Branch      <= 0;
+                    Jump        <= 1;
+                    ALUOp       <= 2'b00;  // ALU operation: No operation (just jump)
+                end
+                default: begin
+                    MemRead     <= 0;
+                    MemWrite    <= 0;
+                    RegWrite    <= 0;
+                    ALUSrc      <= 0;
+                    RegDst      <= 0;
+                    MemToReg    <= 0;
+                    Branch      <= 0;
+                    Jump        <= 0;
+                    ALUOp       <= 2'b00;
+                end
+            endcase
         end
-
-        7'b0000011: begin // Load instruction (e.g., LW)
-            alu_src   = 1'b1;  // Use immediate for address calculation
-            mem_read  = 1'b1;  // Enable memory read
-            reg_write = 1'b1;  // Write loaded value to a register
-            memToReg  = 1'b1;  // Write memory data, not ALU result
-            alu_op    = 4'b0000; // ADD for address calculation
-        end
-
-        7'b0100011: begin // Store instruction (e.g., SW)
-            alu_src   = 1'b1;  // Use immediate for address calculation
-            mem_write = 1'b1;  // Enable memory write
-            alu_op    = 4'b0000; // ADD for address calculation
-        end
-
-        7'b1100011: begin // Branch instruction (e.g., BEQ)
-            branch = 1'b1;    // Enable branching
-            alu_op = 4'b0001; // SUB for comparison
-        end
-
-        default: begin
-            // Set all outputs to unknown ('x') for undefined opcode
-            alu_src   = 'x;
-            mem_read  = 'x;
-            mem_write = 'x;
-            reg_write = 'x;
-            branch    = 'x;
-            memToReg  = 'x;
-            alu_op    = 4'bxxxx; // Undefined ALU operation
-        end
-    endcase
-end
+    end
 endmodule
 
 
