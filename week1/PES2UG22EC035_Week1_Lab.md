@@ -28,11 +28,6 @@ It combines the rearranged bytes to create the final big-endian number in x9.
 
  
 
-### Snapshot
-
-![image](https://github.com/user-attachments/assets/53ac4fc2-ca48-40d4-a757-6c39cab54c22)
-![image](https://github.com/user-attachments/assets/6c2fbea5-24e2-4cdb-a803-f76c505a43a5)
-
 
 
 
@@ -63,11 +58,6 @@ The result is stored as the low 32 bits in one register and the high 32 bits in 
 ### Register Mapping
 ![image](https://github.com/user-attachments/assets/a52b5849-b0f0-45a1-a8f0-7da660e2c312)
 
-
-### Snapshot
-
-![image](https://github.com/user-attachments/assets/9c19f1ac-cb7c-4b19-ba70-81009e5f3e15)
-![image](https://github.com/user-attachments/assets/f8edd581-39e7-485e-86b4-08fd67e3842d)
 
 
 
