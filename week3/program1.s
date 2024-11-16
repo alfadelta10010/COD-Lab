@@ -1,22 +1,50 @@
 .data
-a: .word 0x12345678      # loading the word size of data
-b: .word 0xff            # loading the word size of data
-c: .word 0               # Initialising the value of the array to be zero
-.text
-la x10,a                 # Loading the address of the array a in x10
-la x11,b                 # Loading the address of the array b in x11
-la x17,c                 # Loading the address of the array c in x17
-lw x12,0(x10)            # Loading the data of array a to register x12
-lw x13,0(x11)            # Loading the data of array b to register x13
-addi x15,x15,24          # Initialising the value of the register as 24
-addi x19,x0,-8           # Initialising the value of the register as -8
-addi x18,x17,3           # Incrementing the address of array c to +3 
+a: .byte 0x7,0xa,0x5,0x3,0x9
+b: .byte 0,0,0,0,0
 
-loop:                    # Masking operation
-and x14,x12,x13          # Anding the data present in register x12 and x13
-sb x14,0(x18)            # Storing byte data present in the incremented address
-sll x14,x14,x15          # Left shifting the data present in x14 to 24 times
-addi x15,x15,-8          # Decrementing the value by 8
-srli x12,x12,8           # Right shifting the data present in x12 by 8
-addi x18,x18,-1          # Decrementing the data presnt in x18 by 1
-bne x15,x19,loop         # if value in x15=-8 then the loop breaks
+.text
+la x10,a
+la x11,b
+addi x22,x10,0
+addi x23,x11,0
+addi x25,x0,5
+addi x27,x0,1
+loop:
+     addi x24,x0,0
+     lbu x24,0(x22)
+     addi x22,x22,1
+     addi x23,x23,1
+     addi x25,x25,-1
+     jal x1,subroutine
+     bne x20,x27,skip
+     sb x27,0(x23)
+     skip:
+     bne x25,x0,loop
+     beq x0,x0,exit3
+
+subroutine:    
+addi x21,x23,0
+andi x12,x21,0xE0
+bne x12,x0,exit
+addi x13,x0,5
+addi x14,x0,0
+addi x15,x0,2
+addi x17,x0,0
+back:
+    andi x16,x21,0x01 
+    beq x16,x0,next
+    addi x17,x17,1    
+    next:
+        srli x16,x16,1
+        addi x13,x13,-1
+        bne x13,x0,back
+    bne x17,x15,exit
+addi x20,x0,0
+addi x20,x20,1
+beq x12,x0,exit2        
+exit:
+    addi x26,x0,2 
+exit2:
+    jalr x0,x1,0
+exit3:
+    nop
