@@ -1,4 +1,35 @@
-# PROGRAM 1
+# PROGRAM 1a
+.data
+a: .word 0x80001234 , 0x90000123
+
+.text
+la x2, a
+lw x18, 0(x2)
+lw x19, 4(x2)
+add x20,x18,x19
+sw x20,8(x2)
+
+# PROGRAM 1b
+.data
+a: .half 0x61A8 , 0x350
+
+.text
+la x2, a
+lh x18, 0(x2)
+lh x19, 2(x2)
+add x20,x18,x19
+sh x20,6(x2)
+
+# PROGRAM 1c
+.data
+a: .byte 0x06 , 0x02
+
+.text
+la x2, a
+lb x18, 0(x2)
+lb x19, 1(x2)
+add x20,x18,x19
+sb x20,2(x2)
 
 
 
