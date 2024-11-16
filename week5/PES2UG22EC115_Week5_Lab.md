@@ -51,10 +51,12 @@ PES2UG22EC115_Week5_Lab.s
 
 
 ### Snapshot
+![divby9](https://github.com/user-attachments/assets/bf273489-2eb4-449f-98e7-411597435621)
 
 
 # Program 2: 
 ### Write an Assembly Program for the following C code:
+```
 main() {
 	unsigned short int a[11] = {0x1234, 0x5678, ...};
 	unsigned short int b[11] = {0x1234, 0x5678, ...};
@@ -63,7 +65,7 @@ main() {
 	{
 		c[i] = a[i] * b[i] + c[i-1];
 	}
-
+```
 ### Name of file:
 PES2UG22EC115_Week5_Lab.s
 
@@ -112,3 +114,7 @@ PES2UG22EC115_Week5_Lab.s
 - **x29:** `0x00000009`
 - **x30:** `0x10000028`
 - **x31:** `0x00000001`
+
+
+### Snapshot
+![cprogtoasm](https://github.com/user-attachments/assets/b90f13d2-a24b-4cff-aef0-d698ccbac689)
