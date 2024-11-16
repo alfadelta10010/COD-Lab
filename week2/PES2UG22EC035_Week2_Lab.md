@@ -33,9 +33,6 @@ p1.s
 ![image](https://github.com/user-attachments/assets/90f72ee6-a8ff-4ba1-af66-2eaf15275e05)
 
 
-### Snapshot
-![image](https://github.com/user-attachments/assets/722b5f3f-40b4-40ee-91a0-11ffde459f8c)
-![image](https://github.com/user-attachments/assets/a995b986-6959-4dfc-8779-71aa13241220)
 
 
 # Program 2: 
@@ -64,9 +61,6 @@ The result x is stored in register x15 before the program exits.
 ### Register Mapping
 ![image](https://github.com/user-attachments/assets/545b2444-7265-4856-9f74-5af87735eff2)
 
-
-### Snapshot
-![image](https://github.com/user-attachments/assets/f30f3944-5cb8-4875-87ef-7da5facbb3e0)
 
 
 
