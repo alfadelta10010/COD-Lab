@@ -1,8 +1,7 @@
-# Program 1: 
-### Statement: <Enter the program statement>
+# EX stage
+![EX](../assets/rtl/EX.png)
+# `[src/EX.sv](src/EX.sv)`
 
-### Name of file:
-<Enter the name of the file>
-
-### RTL Snapshot
-![Screenshot of RTL view, full screen](<program1.png>)
+# ALU
+![ALU](../assets/rtl/alu.png)
+# `[src/alu.sv](src/alu.sv)`

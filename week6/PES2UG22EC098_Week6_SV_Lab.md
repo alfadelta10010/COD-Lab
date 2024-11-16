@@ -1,15 +1,17 @@
-	1. Write a SV program for Asynchronous Reset Flip Flop
-	2. Write a SV program for Synchronous Reset Flip Flop
-	3. Write a SV program for 3:1 MUX
-	4. Write a SV program for 2:1 MUX
-	5. Write a SV program for Adder
-	6. Write a SV program for Instruction Fetch Stage
-	7. Write a SV program for Instruction Memory
 # Program 1: 
-### Statement: <Enter the program statement>
+### Statement: Write a SV program for Instruction Fetch Stage
 
 ### Name of file:
-<Enter the name of the file>
+`[src/IF.sv](src/IF.sv)`
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen](<program1.png>)
+![Screenshot of RTL view, full screen](../assets/rtl/IF.png>)
+
+# Program 2: 
+### Statement: Write a SV program for Instruction Memory
+
+### Name of file:
+`[src/instruction_memory.sv](src/instruction_memory.sv)`
+
+### RTL Snapshot
+![Screenshot of RTL view, full screen](../assets/rtl/instruction_mem.png>)

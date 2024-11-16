@@ -1,9 +1,3 @@
-# Week 9 - SystemVerilog Assignment
-# Program 1: 
-### Statement: Write a SV program for Control units
-
-### Name of file:
-<Enter the name of the file>
-
-### RTL Snapshot
-![Screenshot of RTL view, full screen](<program1.png>)
+# Control Unit
+![CU](../assets/rtl/CU.png)
+file: `[src/control_unit.sv](src/control_unit.sv)`
