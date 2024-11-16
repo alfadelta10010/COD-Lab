@@ -83,4 +83,4 @@ program2.s
 - **x18: 0xffffffff 
 
 ### Snapshot
-![program2.png]([program2.png](https://github.com/ChethanReddyGN/COD-Lab/blob/week1/week1/program2.png?raw=true))
+![program2.png](https://github.com/ChethanReddyGN/COD-Lab/blob/874525bb1e380153c17a5830a0cc5a0465582515/week1/program2.png)
