@@ -7,4 +7,4 @@ week9_lab.sv
 
 ### RTL Snapshot
 ![Screenshot of RTL view, full screen]()
-![Screenshot (202)](https://github.com/user-attachments/assets/e0683c69-3fa5-46a2-be41-881ff2f7a985)
+![Screenshot (202)](https://github.com/user-attachments/assets/ceeb6146-7b05-4dc7-b3b0-b9e5b80221c0)
