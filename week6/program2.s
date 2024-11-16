@@ -21,13 +21,15 @@ iterative_loop:
     j iterative_loop              # Repeat the loop
 
 store_iter:
-    sw t1, result_iter           # Store the result of iterative factorial
+    la t3, result_iter           # Load address of result_iter into t3
+    sw t1, 0(t3)                 # Store the result of iterative factorial
 
     # Recursive Factorial Calculation
-    lw t0, num                   # Load the number into t0 again for recursion
+    lw a0, num                   # Load the number into a0 again for recursion
     jal ra, factorial             # Call factorial function
 
-    sw a0, result_recur          # Store the result of recursive factorial
+    la t4, result_recur          # Load address of result_recur into t4
+    sw a0, 0(t4)                 # Store the result of recursive factorial
 
     # Exit Program
     li a7, 10                    # Load exit syscall number
