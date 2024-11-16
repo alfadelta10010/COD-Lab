@@ -38,7 +38,7 @@ program1.s
 - **x19: 0xfffffff8
 
 ### Snapshot
-![program1.jpg](https://github.com/ChethanReddyGN/COD-Lab/blob/week1/week1/program1.png?raw=true)
+![program1.png](https://github.com/ChethanReddyGN/COD-Lab/blob/week1/week1/program1.png?raw=true)
 
 # Program 2: 
 ### Statement: 
@@ -83,4 +83,4 @@ program2.s
 - **x18: 0xffffffff 
 
 ### Snapshot
-![Screenshot of RIPES window](program2.png)
+![program2.png]([program2.png](https://github.com/ChethanReddyGN/COD-Lab/blob/week1/week1/program2.png?raw=true))
