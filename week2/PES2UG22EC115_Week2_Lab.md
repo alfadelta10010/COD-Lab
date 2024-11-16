@@ -1,4 +1,4 @@
-# Program 1: 
+# Program 1a: 
 ### Statement: Write an Assembly Program for addition of 2 words
 
 ### Name of file:
@@ -32,9 +32,9 @@ PES2UG22EC115_Week2_Lab.s
 - **0x10000000:** 0x80001234
 
 ### Snapshot
+![word_addi](https://github.com/user-attachments/assets/757aab2f-d554-4949-9b1a-d517bc421745)
 
-
-# Program 2: 
+# Program 1b: 
 ### Statement: Write an Assembly Program for addition of 2 half words
 
 ### Name of file:
@@ -67,9 +67,10 @@ PES2UG22EC115_Week2_Lab.s
 - **0x10000000:** 0x035061a8
 
 ### Snapshot
+![half_addi](https://github.com/user-attachments/assets/74abd484-3d3b-4eb3-a821-642cca698b6c)
 
 
-# Program 3: 
+# Program 1c: 
 ### Statement: Write an Assembly Program for addition of 2 bytes
 
 ### Name of file:
@@ -101,9 +102,9 @@ PES2UG22EC115_Week2_Lab.s
 - **0x10000000:** 0x00080206
 
 ### Snapshot
+![byte_addi](https://github.com/user-attachments/assets/acb0c159-0a62-4e66-a67a-55e2ded76fc9)
 
-
-# Program 1: 
+# Program 2: 
 ### Statement: Write an Assembly program for calculating x = (y + m) - (L - D) + (Z + C) - D, where x, y, m, L, D, Z, C are elements of 32-bits wide
 
 ### Name of file:
@@ -140,3 +141,4 @@ PES2UG22EC115_Week2_Lab.s
 
 
 ### Snapshot
+![eqnprob](https://github.com/user-attachments/assets/ac9e0fea-574d-444a-b8ad-29e72a1de6a4)
