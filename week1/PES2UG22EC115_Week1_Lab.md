@@ -46,6 +46,18 @@ PES2UG22EC115_Week1_Lab.s
 - Load the LSB values of both numbers into 2 registers and add them. Check for carry using sltu instruction and store in another register. (sets value 1 if result value is greater  than either of the operands).
 - Perform the same steps for MSB of both numbers. FInally add the carry to the sum of MSB values. Check for carry in MSB addition using sltu to check for overflow in addition.
 - Result (MSB,LSB final value) is stored back into memory.
+
+### Observation - Single Cycle
+- **Cycles:** 13
+- **Frequency:** 6.21 Hz
+- **CPI:** 1
+- **IPC:** 1
+
+### Observation - 5 Stage
+- **Cycles:** 19 
+- **Frequency:** 5.85 Hz
+- **CPI:** 1.46
+- **IPC:** 0.684
  
 ### Register Mapping
 - **x2:**  0x10000000
