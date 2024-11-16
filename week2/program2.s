@@ -1,15 +1,29 @@
 .data
-a: .dword 0xffffffffffffffff 0xffffffffffffffff    #Creating a variable a of double word size
+y: .word 0x12345678
+m: .word 0x23456789
+L: .word 0x11111111
+D: .word 0x00000123
+Z: .word 0x87346923
+C: .word 0x83656713
+x: .word 0
 .text
-la x10,a                                   # loading base address of a in x10
-lw x11,0(x10)                              # loading lsb of 1st data to x11
-lw x12,4(x10)                              # loading msb of 1st data to x12
-lw x13,8(x10)                              # loading lsb of 2nd data to x13
-lw x14,12(x10)                             # loading msb of 2nd data to x14
-add x15,x11,x13                            # adding lsb's of both data and storing the result in x15
-sltu x16,x15,x11                           # checking if the carry is happening during addition 
-add x17,x12,x14                            # adding msb's of both data and storing the result in x17
-sltu x19,x17,x12                           # checking if the carry is happening during addition
-add x18,x17,x16                            # checking if the carry is happening during addition 
-sw x15,16(x10)                             # storing the msb of the 64bit result in the memory
-sw x18,20(x10)                             # storing the lsb of the 64 bit result in the memory
+la x10,y
+la x11,m
+la x12,L
+la x13,D
+la x14,Z
+la x15,C
+la x16,x
+lw x17,0(x10)
+lw x18,0(x11)
+lw x19,0(x12)
+lw x20,0(x13)
+lw x21,0(x14)
+lw x22,0(x15)
+add x23,x17,x18
+sub x24,x19,x20
+add x25,x21,x22
+sub x26,x23,x24
+add x26,x26,x25
+sub x26,x26,x20
+sw x26,0(x16)
