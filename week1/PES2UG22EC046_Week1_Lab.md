@@ -38,7 +38,7 @@ program1.s
 - **x19: 0xfffffff8
 
 ### Snapshot
-![Screenshot of RIPES window](program1.png)
+![Screenshot of RIPES window](week1/program1.png)
 
 # Program 2: 
 ### Statement: 
