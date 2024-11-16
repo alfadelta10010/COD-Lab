@@ -12,7 +12,9 @@ program1a.s
 
 
 ### Snapshot
-![Screenshot of RIPES window](program1a.png)
+![code](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171145.png)
+![register_file](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171203.png)
+![memeory](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171215.png)
 
 ---
 
@@ -29,7 +31,9 @@ program1b.s
 
 
 ### Snapshot
-![Screenshot of RIPES window](program1b.png)
+![code](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171236.png)
+![register_file](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171247.png)
+![memeory](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171255.png)
 
 ---
 
@@ -47,7 +51,9 @@ program1c.s
 
 
 ### Snapshot
-![Screenshot of RIPES window](program1c.png)
+![code](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171316.png)
+![register_file](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171325.png)
+![memeory](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171333.png)
 
 ---
 
@@ -68,4 +74,6 @@ program2.s
 
 
 ### Snapshot
-![Screenshot of RIPES window](program2.png)
+![code](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171355.png)
+![register_file](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171409.png)
+![memeory](https://github.com/ChethanReddyGN/COD-Lab/blob/c35657739111ad4b4aaa398d44717d3fde6147c5/week2/Screenshot%202024-11-16%20171425.png)
