@@ -38,7 +38,7 @@ program1.s
 - **x19: 0xfffffff8
 
 ### Snapshot
-![Screenshot of RIPES window]([week1/program1.png](https://github.com/ChethanReddyGN/COD-Lab/blob/bdff3c73cdd838cfddd44968e1a1a92cc1e51e10/week1/program1.png))
+![program1.jpg](https://github.com/ChethanReddyGN/COD-Lab/blob/week1/week1/program1.png?raw=true)
 
 # Program 2: 
 ### Statement: 
