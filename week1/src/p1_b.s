@@ -3,7 +3,7 @@ a:    .byte 0x0
 
 .text
 
-# Making the array :(Forgive my brain)
+# Making the array
 la x10, a
 addi x20, x20, 3 # register
 addi x21, x21, 16 # register
