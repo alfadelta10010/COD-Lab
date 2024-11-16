@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Program 1: 
 ### Statement: <Enter the program statement>
 
@@ -17,3 +18,16 @@
 ### RTL Snapshot
 ![Screenshot of RTL view, full screen]"C:\Users\shree darshini\Pictures\Screenshots\Screenshot (196).png"
 >>>>>>> bf7cba6 (Resolve merge conflicts)
+=======
+
+
+# Program 1: 
+### Statement: 
+
+### Name of file:
+week6_lab.sv
+
+### RTL Snapshot
+![Screenshot of RTL view, full s![Screenshot (196)](https://github.com/user-attachments/assets/4eec0c26-09a0-461e-a964-9d0931b6ae49)
+creen]
+>>>>>>> 7f5de11ebe5e434819f1426b95c5c330b8eb3857
