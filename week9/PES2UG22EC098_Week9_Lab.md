@@ -1,6 +1,5 @@
-# Week 9 - SystemVerilog Assignment
 # Program 1: 
-### Statement: Write a SV program for Control units
+### Statement: <Enter the program statement>
 
 ### Name of file:
 <Enter the name of the file>
