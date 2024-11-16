@@ -5,8 +5,8 @@
 ### Statement: Convert a 32-bit value from Little Endian to Big Endian format using RISC-V assembly 
 
 ### Name of file:
-`[src/p4_a.s](src/p4_a.s)`
-`[src/p4_b.s](src/p4_b.s)`
+[src/p4_a.s](src/p4_a.s)
+[src/p4_b.s](src/p4_b.s)
 
 ### Observation - Explanation
 - <Write 3 statements explaining what the assembly program is doing>
