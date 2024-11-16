@@ -1,23 +1,35 @@
+# Write an assembly program to encode a number using Hamming code.
 .data
-a:.byte 0x1E, 0x28,0x18,0xE0,0x05
-b:.byte 0,0,0,0,0
+input:  .word 0b1011          
+output: .word 0               
+
 .text
-la x20,a
-la x21,b
-addi x22,x0,5
-Loop:
-lbu a0,0(x20)        # a[0]  after execution of bne a[1]
-jal x1,twoOutFive
-sb a,0(x21)
-addi x20,x20,1     # we access the next element by  index
-addi x21,x21,1
-addi x22,x22,-1    # x22 = 4
-bne x22,x0,Loop
-Same:
-    j Same
-
-
-twoOutFive:
-    
-
-FinalExit:nop 
+    start:
+    la x10, input              
+    lw x11, 0(x10)             
+    andi x12, x11, 0x1        
+    srli x11, x11, 1           
+    andi x13, x11, 0x1         
+    srli x11, x11, 1           
+    andi x14, x11, 0x1         
+    srli x11, x11, 1           
+    andi x15, x11, 0x1         
+    xor x16, x15, x14          
+    xor x16, x16, x12
+    xor x17, x15, x13          
+    xor x17, x17, x12
+    xor x18, x15, x14          
+    slli x19, x16, 6           
+    slli x20, x17, 5           
+    or x19, x19, x20           
+    slli x20, x15, 4           
+    or x19, x19, x20          
+    slli x20, x18, 3           
+    or x19, x19, x20           
+    slli x20, x14, 2           
+    or x19, x19, x20           
+    slli x20, x13, 1           
+    or x19, x19, x20           
+    or x19, x19, x12           
+    la x10, output             
+    sw x19, 0(x10)             
