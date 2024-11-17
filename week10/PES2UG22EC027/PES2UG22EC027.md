@@ -12,4 +12,4 @@ File Name: ALU_Control.sv
 File Name: Control_Unit.sv
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen](<Control_Unit.png>)
+![Screenshot of RTL view, full screen](<Main_Control.png>)
