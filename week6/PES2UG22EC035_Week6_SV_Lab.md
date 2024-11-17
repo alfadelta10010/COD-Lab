@@ -26,6 +26,7 @@ syncff.sv
 31mux.sv
 
 ### RTL Snapshot
+![image](https://github.com/user-attachments/assets/8e5bba13-fb9b-4d41-9833-1c6e3f75978c)
 
 
 
