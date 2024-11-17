@@ -1,0 +1,10 @@
+module EXXstage#(parameter n=32)(
+input logic [n-1:0]rdata1,rdata2,imm,
+input logic [3:0]aluopra,
+input logic alusour,branch,
+output logic [n-1:0]data,aluout,
+output logic zero,bz);
+alumux am(.rdata2(rdata2),.imm(imm),.alusour(alusour));
+aluand aa(.branch(branch),.zero(zero),.bz(bz));
+alu a(.aluopra(aluopra),.data(data),.rdata1(rdata1),.aluout(aluout));
+endmodule
