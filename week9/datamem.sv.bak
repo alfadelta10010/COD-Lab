@@ -1,0 +1,2 @@
+module datamem #(parameter n=32)(
+input logic [addr)

@@ -1,0 +1,6 @@
+module writeback#(parameter n=32)(
+input logic [n-1:0] aluout,dataout,
+input logic memreg,
+output logic[n-1:0]wbackout);
+ assign wback = memreg? aluout : dataout;
+endmodule
