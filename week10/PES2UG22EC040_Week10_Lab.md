@@ -2,5 +2,5 @@
 ### Statement: Write a SV program for Control units
 
 ### Name of file:
-control_unit.sv
-
+Main_control.sv
+alu_control.sv
