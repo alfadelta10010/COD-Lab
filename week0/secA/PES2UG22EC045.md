@@ -1,6 +1,6 @@
 ## Name
-- <Chethan M N>
+- Chethan M N
 ## SRN
-- <PES2UG22EC045>
+- PES2UG22EC045
 ## Device
-- <Ubuntu>
+- Ubuntu

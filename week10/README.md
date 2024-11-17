@@ -3,7 +3,7 @@
 	1. Write a SV program for Control units
 - While submitting, you are required to make a Markdown file with the following contents. You are required to submit your observations in the same manner
 
-- File name: `<SRN>_Week10_Lab.md` (eg: `PES2UG21EC003_Week10_Lab.md`)
+- File name: `<SRN>_Week10_Lab.md` (eg: `PES2UG21EC045_Week10_Lab.md`)
 ```markdown
 # Program 1: 
 ### Statement: <Enter the program statement>
