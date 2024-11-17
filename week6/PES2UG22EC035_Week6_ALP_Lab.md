@@ -12,26 +12,23 @@ The array is sorted in ascending order using the bubble sort algorithm, and the 
 
 ### Observation - Single Cycle
 
+![image](https://github.com/user-attachments/assets/eb1de1f1-3f9d-4542-94ad-d6ecaa4200df)
+
 ### Observation - 5 Stage
 
+![image](https://github.com/user-attachments/assets/7ed5e462-e14a-4457-a756-35770f846415)
 
-### Memory Mapping
-
-### Register Mapping
-
-
-### Snapshot
 
 
 # Program 2 
-### Statement: Write an assembly program to calculate the factorial of a number with & without recursion
+### Statement: Write an assembly program to calculate the factorial of a number without recursion
 
 a. without recursion
 ### Name of file:
 p2norec.s
 
 ### Observation - Explanation
-a.       Load the number (n = 5) into register x6.
+   Load the number (n = 5) into register x6.
     Initialize the result (x7 = 1) and the loop index (x8 = 1).
     Loop: Multiply the result (x7) by the current index (x8), increment x8, and repeat until x8 reaches or exceeds n. Finally, store the result (x7) in memory.
 
@@ -39,9 +36,12 @@ The loop multiplies the running total by each integer from 1 to n to compute the
 
 
 ### Observation - Single Cycle
+![image](https://github.com/user-attachments/assets/deded9b2-1e13-4f60-8bf4-6163ba3ac56e)
+
 
 ### Observation - 5 Stage
 
+![image](https://github.com/user-attachments/assets/6c96f52a-1fbe-4832-919a-50bf000f3326)
 
 
 
@@ -62,7 +62,10 @@ This assembly program multiplies two 2x2 matrices (A and B) and stores the resul
 
 
 ### Observation - Single Cycle
+![image](https://github.com/user-attachments/assets/c995e66f-5a9c-426e-87af-0d30f8028496)
+
 
 ### Observation - 5 Stage
+![image](https://github.com/user-attachments/assets/8d61c2ce-eb24-4700-8b6a-91cb8dbbb87b)
 
 
