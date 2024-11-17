@@ -1,0 +1,7 @@
+module IDstage#(parameter n=32)(
+  output logic [4:0] rd,rs1,rs2,
+  output logic [11:0] imm,
+  output logic [2:0]fun3,
+  output logic [6:0]fun7);
+  decoder d(.instr(instr),.rd(rd),.rs1(rs1),.rs2(rs2),.imm(imm),.fun3(fun3),.fun7(fun7));
+end module
