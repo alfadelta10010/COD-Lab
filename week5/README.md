@@ -1,8 +1,19 @@
-# Week 1 - Assembly Assignment
+# Week 5 - Assembly Assignment
 
 - Upload the two assembly programs written last lab class, in `.s` format. The problem statements are as follows:
-	1. Convert a 32-bit value from Little Endian to Big Endian format using RISC-V assembly
-	2. Write an Assembly Program for addition of 2 64-bit numbers on RV32I 
+	1. Write an assembly program to check whether a given number in an array of elements is divisible by 9
+	2. Write an Assembly Program for the following C code:
+	```c
+main() {
+	unsigned short int a[11] = {0x1234, 0x5678, ...};
+	unsigned short int b[11] = {0x1234, 0x5678, ...};
+	unsigned short int c[11] = {0x1234, 0x5678, ...};
+	for(i = 0; i < 10; i++)
+	{
+		c[i] = a[i] * b[i] + c[i-1];
+	}
+}
+	```
 - Run the program with RIPES in Single Cycle and 5 stage w/ pipeline modes
 - Take screenshots in processor view, with registers, CPI and IPC visible
 - **Note**: Open a PR to submit
