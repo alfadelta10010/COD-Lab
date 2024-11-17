@@ -1,6 +1,0 @@
-## Name
-- TARUN KALIDASS SANGEETHA
-## SRN
-- PES2UG22EC146
-## Device
-- WSL

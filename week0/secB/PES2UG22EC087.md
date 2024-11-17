@@ -1,6 +1,0 @@
-## Name
--  NEHASHREE S
-## SRN
-- PES2UG22EC087
-## Device
-- WSL,ASUS
