@@ -12,7 +12,7 @@ p1.s
 ### Observation - Explanation
     The program loads two numbers for each type (word, half-word, and byte) from memory.
     It adds the numbers for each type and stores the results in registers (x9, x10, and x11).
-    The program ends after performing all three additions.
+    The program ends after performing all three additions
 
 
 
