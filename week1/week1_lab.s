@@ -1,54 +1,66 @@
-addition of two 32 bit
+i.	Convert a 32-bit value from Little Endian to Big Endian format using RISC-V assembly
 .data
-a: .word 0X12345678, 0X11117866,0 #defining the array ‘a’
+a:.word 0x12345678
 .text
-la x10,a #loading the value of a into respective register
-lw x11,0(x10) #loading the value of 1st register in x11
-lw x12,4(x10)
-add x13,x11,x12 #addition of 2 registers
-sw x13,8(x10)   # stores value in x13 which is address of x10+8
+la x10,a
+lw x11,0(x10)
+andi x12,x11,0xFF
+slli x12,x12,24
+
+srli x13,x11,8
+andi x13,x13,0xFF
+slli x13,x13,16
+add x12,x12,x13
+
+srli x13,x11,16
+andi x13,x13,0xFF
+slli x13,x13,8
+add x12,x12,x13
+
+srli x13,x11,24
+add x12,x12,x13
+sw x12,0(x10)
 
 
+i.	Write an Assembly Program for addition of 2 64-bit numbers on RV32I
+    .data
+a_low:  .word 0x00000001          # Lower 32 bits of first 64-bit number (1)
+a_high: .word 0x00000000          # Upper 32 bits of first 64-bit number (0)
+b_low:  .word 0x00000002          # Lower 32 bits of second 64-bit number (2)
+b_high: .word 0x00000000          # Upper 32 bits of second 64-bit number (0)
+result_low: .word 0               # To store the lower 32 bits of the result
+result_high: .word 0              # To store the upper 32 bits of the result
 
-addition 0f 2 16 bit                         
-.data                                                  
-a: .word 0X1234, 0X1111,0 #defining the array ‘a’
-.text
-la x10,a #loading the value of a into respective register
-lh x11,0(x10) #loading the value of 1st register in x11
-lh x12,4(x10)
-add x13,x11,x12 #addition of 2 registers
-sh x13,8(x10) # stores value in x13 which is address of x10+8
+    .text
+    li x5, 0                      # Start of main code
+
+    # Load the lower and higher 32 bits of the first number (a)
+    la x6, a_low                   # Load address of a_low into x6
+    lw x7, 0(x6)                   # Load a_low into x7 (lower 32 bits of a)
+    la x6, a_high                  # Load address of a_high into x6
+    lw x8, 0(x6)                   # Load a_high into x8 (upper 32 bits of a)
+
+    # Load the lower and higher 32 bits of the second number (b)
+    la x6, b_low                   # Load address of b_low into x6
+    lw x9, 0(x6)                   # Load b_low into x9 (lower 32 bits of b)
+    la x6, b_high                  # Load address of b_high into x6
+    lw x10, 0(x6)                  # Load b_high into x10 (upper 32 bits of b)
+
+    # Add the lower 32 bits
+    add x11, x7, x9                # Add lower 32 bits of a and b
+    mfhi x12                        # Move carry (high part) from the addition
+
+    # Add the upper 32 bits with carry
+    add x13, x8, x10               # Add the upper 32 bits of a and b
+    add x13, x13, x12              # Add the carry from the lower 32-bit addition
+
+    # Store the results in result_low and result_high
+    la x6, result_low              # Load address of result_low into x6
+    sw x11, 0(x6)                  # Store the lower 32 bits of the result in result_low
+    la x6, result_high             # Load address of result_high into x6
+    sw x13, 0(x6)                  # Store the upper 32 bits of the result in result_high
+
+    # Exit (typically with an exit system call, but here it is just an infinite loop)
+    j x5                           # Jump to x5 to create an infinite loop, ending the program
 
 
-
-
-
-addition of two 8bit
-.data
-a: .word 0X12, 0X11,0 #defining the array ‘a’
-.text
-la x10,a  #loading the value of a into respective register
-lb x11,0(x10) #loading the value of 1st register in x11
-lb x12,4(x10)
-add x13,x11,x12 #addition of 2 registers
-sb x13,8(x10) # stores value in x13 which is address of x10+8
-
-
-
-
-
-
-4)
-.data
-a: .word 0XA8BD3457
-b: .half 0X6745
-c: .byte 0XB4
-.text
-lw x5,a
-la x6,b
-lh x7,0(x6)#signed lh
-lhu x8,0(x6)#unsigned lh
-la x9,c
-lb x10,0(x9)#signed lb
-lbu x11,0(x9)#unsigned lb
