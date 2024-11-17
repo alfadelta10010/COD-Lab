@@ -5,7 +5,7 @@ N:      .word 6                       # Number of elements
 .text
     la x5, array
     la x6, N                      
-    lw x6, 0(x6)                \
+    lw x6, 0(x6)                
 
     # Set up outer loop (i = 0 to N-1)
     li x7, 0                      # Set i = 0
@@ -13,7 +13,7 @@ outer_loop:
     # Set up inner loop (j = 0 to N-i-2)
     li x8, 0                      # Set j = 0
     sub x9, x6, x7                # N - i (remaining elements)
-    sub x9, x9, 2                 # N - i - 1, because we check until N - i - 2
+    addi x9, x9, -2                 # N - i - 1, because we check until N - i - 2
 inner_loop:
     # Calculate address of array[j] and array[j+1]
     slli x10, x8, 2               # Multiply j by 4 (because each element is 4 bytes)
