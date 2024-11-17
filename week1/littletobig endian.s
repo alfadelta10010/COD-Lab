@@ -18,7 +18,6 @@ slli x11,x11,8 # Shift the isolated byte left by 8 bits to place it in the third
 
 add x12,x11,x9 # Add the result of the first two bytes (in x9) and the third byte (in x11), store in x12
 srli x13,x5,24 # Shift x5 right by 24 bits to move the fourth byte (MSB) into the LSB position, store in x13
-andi x14,x13,0xff # Isolate the fourth byte by ANDing with 0xff, store in x14
 
-add x15,x14,x12 # Add the fourth byte (in x14) to the result of the first three bytes (in x12), store in x15
+add x15,x13,x12 # Add the fourth byte (in x14) to the result of the first three bytes (in x12), store in x15
 sw x15,4(x4) # Store the final result (sum of the bytes) at the address 4 bytes after 'a'
