@@ -1,49 +1,31 @@
-#Program 1:Write an Assembly Program for the following C code:
+# Program 1a
 .data
-a: .half 0x0000,0x1000,0x0200,0x0030,0x0001,0x0101,0x2010,0x0010,0x1023,0x2011,0x0001
+a: .word 0x12345678,0x00001111
 .text
-la x1,a
-lh x2,0(x1)
-lh x3,2(x1)
-add x4,x2,x3
-sh x4,20(x1)
-
-lh x5,4(x1)
-add x6,x4,x5
-sh x6,20(x1)
-
-lh x7,6(x1)
-add x8,x7,x6
-sh x8,20(x1)
-
-lh x9,8(x1)
-add x10,x8,x9
-sh x10,20(x1)
-
-lh x11,10(x1)
-add x12,x11,x10
-sh x12,20(x1)
-
-lh x13,12(x1)
-add x14,x12,x13
-sh x14,20(x1)
-
-lh x15,14(x1)
-add x16,x14,x15
-sh x16,20(x1)
-
-lh x17,16(x1)
-add x18,x17,x16
-sh x18,20(x1)
-
-lh x19,18(x1)
-add x20,x19,x18
-sh x20,20(x1)
-
-lh x21,22(x1)
-add x22,x21,x20
-sh x22,18(x1)
+la x18,a		//Loads base address
+lw x19,0(x18)		//Loads word to register x19	
+lw x20,4(x18)		//Loads word to register x20
+add x21,x19,x20		//adds the values in x19,x20 and stores result in x21
+sw x21,8(x18)		//stores result in memory
 
 
+#Program 1b 
+.data
+a: .half 0x1234,0x1111
+.text
+la x18,a		//Loads base address
+lh x19,0(x18)		//Loads half word to register x19	
+lh x20,2(x18))		//Loads half word to register x20
+add x21,x19,x20		//adds the values in x19,x20 and stores result in x21
+sh x21,4(x18)		//stores result in memory
 
-#added sum is stored in register x20
+
+# Program 1c
+.data
+a: .byte 0x12 , 0x01
+.text
+la x18, a		//Loads base address
+lb x19, 0(x18)		//Loads byte to register x19
+lb x20, 1(x18)		//Loads byte to register x20
+add x21,x19,x20		//adds the values in x19,x20 and stores result in x21
+sb x21,2(x18)		//stores result in memory
