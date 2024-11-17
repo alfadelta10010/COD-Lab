@@ -1,29 +1,33 @@
-.data
-a: .byte 0x0f, 0x0e, 0x1e, 0x10, 0x0a, 0x40
+.data # bubble sort
+a: .byte 0x0e, 0x0d, 0x10, 0x02, 0x07, 0x04
 
 .text
-la x10, a
-addi x8, x0, 5 # number of elements - 1
-add x9, x10, x8
+addi x21, x0, 5 # final index or number of elements
+
+la x10, a # Initial address
+add x20, x10, x21 # final address
 
 loop1: # outer loop
     loop2: # inner loop
-        lbu x11, 0(x10) # get the 1st element 
-        lbu x12, 1(x10) # get the next element
+        lbu x11, 0(x10) # Get element
+        lbu x12, 1(x10) # Get next element
         bgt x11, x12, swap
-            addi x10, x10, 1 # move to the next element
-            bne x10, x9 loop2 # loop till final 
-        addi x9, x9, -1 # dont check the last element that has been pushed to the last
-        addi x19, x0, 1 # creating a counter
-        la x10, a # load it again
-        bne x19, x8, loop1 # looping the 1st one
-        j exit
-        
-        
-        swap:
-            sb x11, 1(x10)
-            sb x12, 0(x10)
-            j loop2
-        
+		addi x10, x10 ,1 # Goto next element
+		bne x10, x20, loop2 # Loop until it reaches final address
+
+	addi x20, x20, -1 # reduce cycle count by not check the last elements
+
+    la x10, a # Reset address or go back to beginning of array
+    addi x1, x1, 1 # Outer counter
+    bne x1, x21, loop1 # Loop until all indexes covered
+    j exit
+
+swap:
+    sb x11, 1(x10)
+    sb x12, 0(x10)
+    j loop2
+
 exit:
+    addi a0, x0, 0 # exit code
+    addi a7, x0, 93
     ecall
