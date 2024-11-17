@@ -10,11 +10,13 @@ It then compares each character from the string with the characters popped from 
 If all characters match, the program indicates the string is a palindrome; otherwise, it indicates it is not.
 
 ### Observation - Single Cycle
-![Untitled](https://github.com/user-attachments/assets/41fda322-2889-43df-ad45-e0813b7b3607)
+
+![image](https://github.com/user-attachments/assets/92fe2f59-7828-4769-9b73-bbbdf2e62a0c)
 
 
 ### Observation - 5 Stage
-![Untitled](https://github.com/user-attachments/assets/c7556cfc-3941-4871-b87a-1e5e2d583c5a)
+![image](https://github.com/user-attachments/assets/3ce20274-3c02-400f-8e5e-e02f7faf272b)
+
 
 
 
