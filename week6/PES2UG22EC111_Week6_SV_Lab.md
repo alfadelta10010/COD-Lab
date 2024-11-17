@@ -70,7 +70,5 @@ program6i.s
 ![program6vii](https://github.com/user-attachments/assets/f15a2325-f1e1-4d2e-b6d8-e6bd0f182637)
 
 
-### RTL Snapshot
-![program6i](https://github.com/user-attachments/assets/97995c25-a989-4a8b-b9de-90643444a237)
 
 
