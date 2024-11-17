@@ -9,15 +9,18 @@ la x10, a
 lbu x10, 0(x10)
 addi x11, x0, 2
 
+# check if any of the first three bits are 1's
 addi x12, x0, 31
 bltu x12, x10, false
 
 loop:
+	# count number of 1's
     andi x6, x10, 0b1
     add x5, x5, x6
     srli x10, x10, 1 
     bne x10, x0, loop
 
+# check if number of 1's is 2
 beq x5, x11, true
     
 false:
