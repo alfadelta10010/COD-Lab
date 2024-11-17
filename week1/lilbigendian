@@ -1,0 +1,23 @@
+.data 
+a:.word 0x12345678
+
+.text
+la x10,a #loading the address of a
+lw x11,0(x10) #loading the word from x10 to x11
+andi x12,x11 0xff #performing and operation with 0xff so that we get LSB of x11 in x12
+slli x12,x12,24 #shifting that LSB to MSB(0x78000000)
+
+srli x13,x11,8 #shifting one byte on right side(0x00123456)
+andi x13,x13,0xff # anding x13 with 0xff so that we get 0x56
+slli x13,x13,16 #leftbside shifting of 16 bits 
+add x12,x12,x13 # we get 0x78560000
+
+srli x13,x11,16 #shifting 2 byte on right side(0x00001234)
+andi x13,x13,0xff # anding x13 with 0xff so that we get 0x34
+slli x13,x13,8 #leftbside shifting of 8 bits (0x78563400)
+add x12,x12,x13 # we get 0x78563400
+
+
+srli x13,x11,24 #shifting 3 byte(24 bits) on right side(0x00000012)
+add x12,x12,x13 # adiing content of x12 and x13 
+sw x12,0(x10) # x12 has 0x78563412s
