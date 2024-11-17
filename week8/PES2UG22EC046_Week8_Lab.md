@@ -26,4 +26,4 @@ Write a SV program for the ALU control
 alu_ctrl.sv
 
 ### RTL Snapshot
-![Screenshot of RTL view, full screen](https://github.com/ChethanReddyGN/COD-Lab/blob/ebabb5edb58c56f38fe95ba6c293fad1d959a5fe/week8/alu_strl.png)
+![Screenshot of RTL view, full screen](https://github.com/ChethanReddyGN/COD-Lab/blob/ebabb5edb58c56f38fe95ba6c293fad1d959a5fe/week8/alu_ctrl.png)
