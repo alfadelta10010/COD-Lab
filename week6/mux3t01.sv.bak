@@ -1,0 +1,19 @@
+module mux3to1 (
+    input wire [1:0] sel,  // 2-bit selection input
+    input wire [3:0] d0,   // Data input 0
+    input wire [3:0] d1,   // Data input 1
+    input wire [3:0] d2,   // Data input 2
+    output wire [3:0] y    // Output
+);
+
+    // Multiplexer logic using case statement
+    always @ (sel or d0 or d1 or d2) begin
+        case (sel)
+            2'b00: y = d0;  // If sel = 00, select input d0
+            2'b01: y = d1;  // If sel = 01, select input d1
+            2'b10: y = d2;  // If sel = 10, select input d2
+            default: y = 4'b0000; // Default case to prevent latch
+        endcase
+    end
+
+endmodule

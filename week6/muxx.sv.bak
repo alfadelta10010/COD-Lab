@@ -1,0 +1,7 @@
+#code for mux
+module mux#(parameter n=32)(
+  input s,
+  input logic [n-1:0]a, b,
+  output logic[n-1:0] y);
+  assign y = s? a : b;
+endmodule

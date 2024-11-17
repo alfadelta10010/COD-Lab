@@ -1,0 +1,18 @@
+module IFstage#(parameter n=32)(
+  input logic [n-1:0] pc_imm,
+  input logic s,clk,reset,
+  output logic [n-1:0] instr,pc_4,
+  
+  output logic [4:0] rd,rs1,rs2,
+  output logic [11:0] imm,
+  output logic [2:0]fun3,
+  output logic [6:0]fun7);
+logic [n-1:0] x,y;
+ // const bit z=4;
+  muxx m1(.a(pc_4),.b(pc_imm),.s(s),.y(x));
+  pc pc1(.pc_next(x),.clk(clk),.reset(reset),.pc(y));
+  memory mem2(.addr(y),.reset(reset),.instr(instr));
+  halfadder ha1(.a(y),.b(4),.s(pc_4));
+  decoder d(.instr(instr),.rd(rd),.rs1(rs1),.rs2(rs2),.imm(imm),.fun3(fun3),.fun7(fun7));
+endmodule
+  
