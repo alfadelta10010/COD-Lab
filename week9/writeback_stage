@@ -1,0 +1,6 @@
+module writeback_stage #(parameter N=32)(alu_result,mem_result,mem_to_reg,wd);
+input logic [N-1:0] alu_result, mem_result;
+input logic mem_to_reg;
+output logic [N-1:0] wd;
+mux g11 (.a(alu_result), .b(mem_result), .s(mem_to_reg), .y(wd));
+endmodule
