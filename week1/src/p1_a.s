@@ -1,4 +1,4 @@
-.data
+.data # little endian too big endian
 a:    .word 0x80830712, 0xFF000000
 
 .text

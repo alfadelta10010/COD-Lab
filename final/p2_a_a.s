@@ -1,4 +1,4 @@
-.data
+.data # addition of word
 a: .word 0x11111111, 0x22222222, 0x33333333, 0x44444444
 
 .text

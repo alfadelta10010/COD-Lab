@@ -1,5 +1,4 @@
-
-.data 
+.data # 2 out of 5
 a: .byte 0x1f, 0xe0, 0x3f
 
 .text

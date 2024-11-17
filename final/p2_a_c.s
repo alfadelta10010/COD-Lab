@@ -1,4 +1,4 @@
-.data
+.data # addition of bytes
 a: .byte 0x11, 0x22, 0x33, 0x44
 
 .text

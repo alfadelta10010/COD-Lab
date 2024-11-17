@@ -1,4 +1,4 @@
-.data
+.data # array equation
 a: .byte 0x11, 0x22, 0x33, 0x44, 0x11
 b: .byte 0x11, 0x22, 0x33, 0x44, 0x11
 c: .byte 0x11, 0x22, 0x33, 0x44, 0x11
@@ -8,13 +8,14 @@ la x10, a # starting index
 la x11, b # starting index
 la x12, c # starting index
 addi x15, x10, 10 # ending index
+sw x0, -1(x12) # Initialisation of c[-1]
 
 loop:
     lb x20, 0(x10)
     lb x21, 0(x11)
     lb x22, -1(x12)
     
-    mul x23, x20, x12
+    mul x23, x20, x21
     add x24, x23, x22
     sw x22, 0(x22)
     

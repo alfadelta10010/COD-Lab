@@ -1,4 +1,4 @@
-.text
+.text # equation
 addi x10, x10, 6 # y
 addi x11, x11, 5 # m
 addi x12, x12, 4 # l

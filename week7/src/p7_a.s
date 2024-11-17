@@ -1,4 +1,4 @@
-.text # non recursive
+.text # non recursive factorial
 addi x11, x0, 5 # input number
 addi x20, x0, 1
 addi x21, x0, 1

@@ -1,4 +1,4 @@
-.data
+.data # addition of half words
 a: .half 0x1111, 0x2222, 0x3333, 0x4444
 
 .text
