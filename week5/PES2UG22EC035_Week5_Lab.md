@@ -5,23 +5,19 @@
 p1.s
 
 ### Observation - Explanation
- The program iterates through the array and checks if each element is divisible by 9 using the remainder operation.
+ The program iterates through the array and checks if each element is divisible by 9 .
 If an element is divisible by 9 (remainder is 0), it sets x10 to 1, otherwise, it sets x10 to 0.
 The program exits after checking all elements, with the result stored in x10.
 
 
 
 ### Observation - Single Cycle
+![image](https://github.com/user-attachments/assets/b3576d50-b252-43e2-9878-30f763039954)
+
 
 ### Observation - 5 Stage
+![image](https://github.com/user-attachments/assets/8feabfe4-056f-4da0-b7dd-ce2d9e6bf475)
 
-
-### Memory Mapping
-
-### Register Mapping
-
-
-### Snapshot
 
 
 
@@ -39,12 +35,10 @@ The result is then stored back in c[i], and the loop continues until all element
 
 
 ### Observation - Single Cycle
+![image](https://github.com/user-attachments/assets/44f8dcf1-224c-4007-9c94-3f9f959fb899)
+
+
 
 ### Observation - 5 Stage
 
-
-### Memory Mapping
-
-### Register Mapping
-
-### Snapshot
+![image](https://github.com/user-attachments/assets/c7ea9c83-2d1d-45e9-bd71-8b7ec441b051)
