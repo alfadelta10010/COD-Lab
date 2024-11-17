@@ -1,30 +1,14 @@
-# Week 3 - Assignment
+# Week 3 - Assembly Assignment
 
-- Upload the code in `.s` format. The problem statements are as follows:
-
-1. Convert a 32-bit value from Little Endian to Big Endian format using RISC-V assembly 
-
-- Ensure your code has comments for the statements
-- While submitting, you are required to make a Markdown file with the following contents. You are required to submit your observations in the same manner
-
-- File name: Week3_Lab.md
-```markdown
-# Program 1: 
-### Statement: <Enter the program statement>
-
-### Name of file:
-<Enter the name of the file where your code is stored>
-
-### Observation - Single Cycle
-- <Write 3 statements explaining what the assembly program is doing>
- 
-### Register Mapping
-- **<Register Number Used>:** <Value stored>
-
-### Data Mapping
-- **<Memory Address>:** <Value stored>
-
-...
-```
+- Upload the two assembly programs written last lab class, in `.s` format. The problem statements are as follows:
+	1. Write an assembly program to check if a number is a 2 out of 5 number
+	2. Write an assembly program to encode a number using Hamming code.
+- Run the program with RIPES in Single Cycle and 5 stage w/ pipeline modes
+- Take screenshots in processor view, with registers, CPI and IPC visible
 - **Note**: Open a PR to submit
 
+### What should be included in this folder:
+- `program1.s`, `program2.s` files
+- Screenshot of RIPES for each program, saved as `program1-5stage.png`, `program1-singlestage.png`, etc
+
+:warning: **Deadline**: 11:59 PM, Sunday, 17th November, 2024
