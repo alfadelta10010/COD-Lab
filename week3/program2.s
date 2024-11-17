@@ -1,6 +1,6 @@
 .data
 input:  .byte 0b1100     
-output: .space 4          
+output: .byte 0, 0, 0, 0         
 
 .text
 main:
