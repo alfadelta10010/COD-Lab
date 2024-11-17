@@ -4,6 +4,10 @@ halfwords:  .half 100, 200, 300, 400, 500  # Array of 5 half-words (16-bit)
 bytes:      .byte 1, 2, 3, 4, 5       # Array of 5 bytes (8-bit)
 
 n:          .word 5                   # Number of elements (N)
+    .data
+result_word:  .word 0               # To store the result of word addition
+result_halfword: .half 0            # To store the result of half-word addition
+result_byte: .byte 0                # To store the result of byte addition
 
     .text
     li x5, 0                    # Initialize sum to 0 (for words, half-words, and bytes)
@@ -67,7 +71,3 @@ byte_addition_loop:
 exit:
     nop
 
-    .data
-result_word:  .word 0               # To store the result of word addition
-result_halfword: .half 0            # To store the result of half-word addition
-result_byte: .byte 0                # To store the result of byte addition
