@@ -1,0 +1,17 @@
+.data 
+a: .dword 0xabcd12345678abcd,0x9678abcd12121234
+.text
+la x10,a          #x10 will the address of a
+lw x11,0(x10)     #x11 will load the lower 32 bits of doubleword-1
+lw x12,4(x10)     #x12 will load the upper 32 bits of doubleword-1
+lw x13,8(x10)     #x13 will load the lower 32 bits of doubleword-2
+lw x14,12(x10)    #x14 will load the upper 32 bits of doubleword-2
+add x15,x11,x13   #adding lower doubleword-1 and doubleword-2 and stored in x15
+sltu x16,x15,x11  #it checks whether carry is produced or not from added number in x15 register, if produced then it will store in x16
+add x17,x14,x12   #adding upper doubleword-1 and doubleword-2 and st17ored in x
+sltu x19,x17,x14  #checking for carry in the addition of upper doubleword-1,doubleword-2
+add x18,x17,x16   #adding the lower carry to the upper result of doubleword-1,doubleword-2
+sw x15,16(x10)    #x15 will store the 32 bits of lower result (x11 + x13)
+sw x18,20(x10)    #x18 will store the 32 bits of upper result (x12 + x14)
+sw x19,24(x10)    #x19 will store the carry of the upper result
+# X18 and X15 together is the 64 bits added value and with carry X19. 
