@@ -16,10 +16,19 @@ main() {
 ### Statement: Convert a 32-bit value from Little Endian to Big Endian format using RISC-V assembly 
 
 ### Name of file:
-[src/p5.s](src/p5.s)
-
-### Observation - Explanation
-- <Write 3 statements explaining what the assembly program is doing>
+[src/p5_a.s](src/p5_a.s)
 
 ### Snapshot
-![Screenshot of RIPES window](<program1.png>)
+![Screenshot of RIPES window](../assets/single/p5_a.png)
+![Screenshot of RIPES window](../assets/5_stage/p5_a.png)
+
+
+# Program 2:
+### Statement: Write an Assembly Program for the following C code:
+
+### Name of file:
+[src/p5_b.s](src/p5_b.s)
+
+### Snapshot
+![Screenshot of RIPES window](../assets/single/p5_b.png)
+![Screenshot of RIPES window](../assets/5_stage/p5_b.png)

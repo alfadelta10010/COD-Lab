@@ -1,3 +1,7 @@
+> [!Note]
+> All images are stored in `assets/5_stage/`, `assets/single/`, `assets/rtl/`
+> All codes are ALP codes are stored in `final` directory
+
 # COD-Lab
 Instructions & Assignments for COD Lab - UE22EC352A
 
