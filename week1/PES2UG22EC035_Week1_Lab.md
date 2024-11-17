@@ -7,7 +7,7 @@ p1.s
 ### Observation - Explanation
 The program loads the number 0x12345678 from memory into the register x10.
 It extracts each byte from the number and moves them to their new positions for big-endian format.
-It combines the rearranged bytes to create the final big-endian number in x9.
+It combines the rearranged bytes to create the final big-endian number in x9
 
 
 ### Observation - Single Cycle
