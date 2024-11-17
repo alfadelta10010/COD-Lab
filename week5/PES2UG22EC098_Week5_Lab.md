@@ -1,6 +1,6 @@
 # Week 5 - Assembly Assignment
-	1. Write an assembly program to check whether a given number in an array of elements is divisible by 9
-	2. Write an Assembly Program for the following C code:
+1. Write an assembly program to check whether a given number in an array of elements is divisible by 9
+2. Write an Assembly Program for the following C code:
 	```c
 main() {
 	unsigned short int a[11] = {0x1234, 0x5678, ...};
