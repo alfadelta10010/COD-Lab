@@ -43,35 +43,6 @@ The loop multiplies the running total by each integer from 1 to n to compute the
 ### Observation - 5 Stage
 
 
-### Memory Mapping
-
-### Register Mapping
-
-### Snapshot
-
-
-b. with recursion
-### Name of file:
-p2rec.s
-
-### Observation - Explanation
- b.          It loads the number (n = 5) and calls the factorial function.
-In the factorial function, if n is 0 or 1, it returns 1 (base case); otherwise, it recursively calls itself with n-1 and multiplies the result by n (recursive case).
-The final result is stored in memory at the address of n.
-
-
-### Observation - Single Cycle
-
-### Observation - 5 Stage
-
-
-### Memory Mapping
-
-### Register Mapping
-
-### Snapshot
-
-
 
 
 # Program 3: 
@@ -93,14 +64,5 @@ This assembly program multiplies two 2x2 matrices (A and B) and stores the resul
 ### Observation - Single Cycle
 
 ### Observation - 5 Stage
-
-
-### Memory Mapping
-
-### Register Mapping
-
-
-### Snapshot
-
 
 
