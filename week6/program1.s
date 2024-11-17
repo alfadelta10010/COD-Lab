@@ -1,3 +1,5 @@
+# Write an assembly program to sort an array using bubble sort to sort N-elements
+
 .data
 array: .word 5, 2, 9, 1, 5, 6    # Example array
 n:     .word 6                    # Number of elements in the array

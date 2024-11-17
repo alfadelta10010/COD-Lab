@@ -1,5 +1,16 @@
 # Write an assembly program to do matrix multiplication
 
+
+
+
+
+#  NOTE TO THIS POINT BEFORE SUBMISSION MATRIX MULTIPLICATION PROGRAM IS NOT DONE YET
+#  sIR SAID HE'LL DO LATER ON
+
+
+
+
+
 .data
 N: .word 3                       # Size of the matrices (3x3)
 A: .word 1, 2, 3                 # Matrix A
