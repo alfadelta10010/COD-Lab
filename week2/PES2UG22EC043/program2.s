@@ -1,3 +1,6 @@
+# Write an Assembly program for calculating x = (y + m) - (L - D) + (Z + C) - D,
+# where x, y, m, L, D, Z, C are elements of 32-bits wide
+
 .data
 a: .word 0x1, 0x2, 0x3, 0x4, 0x5, 0x6, # y, m, L, D, Z, C
 .text
@@ -17,4 +20,4 @@ add x7, x15, x16
 
 sub x5, x5, x6
 add x5, x5, x7
-sub x5, x5, x14
+sub x5, x5, x14 # x5 now contains x

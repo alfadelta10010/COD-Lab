@@ -1,3 +1,5 @@
+# addition of N bytes
+
 .data
 a: .byte 0x4, 0x1, 0x2, 0x3, 0x4 # first element tells us the number of elements to be added
 .text
