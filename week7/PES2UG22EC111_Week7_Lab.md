@@ -26,12 +26,12 @@ program7iii.s
 ![program7iii](https://github.com/user-attachments/assets/90653679-c98f-425f-bcab-f8085e2cb7eb)
 
 # Program 4: 
-### Statement: Write a SV program for the Register File
+### Statement: Write a SV program for the Immediate Unit
 
 ### Name of file:
 program7iv.s
 
 ### RTL Snapshot 
+![program7iv (2)](https://github.com/user-attachments/assets/4b7c812f-b69d-42d6-9f00-0b62b38c0c57)
 
-![program7iv](https://github.com/user-attachments/assets/3db741b8-41fa-4378-90ad-d73e787610e1)
 
