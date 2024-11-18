@@ -17,7 +17,7 @@ loop:
     
     mul x23, x20, x21
     add x24, x23, x22
-    sw x22, 0(x24)
+    sb x22, 0(x24)
     
     addi x10, x10, 1
     addi x11, x11, 1
