@@ -6,8 +6,8 @@ Write a SV program for Data memory>
 
 ### Name of file:
 <MA.sv
-memory_access.sv
-wb_mux.sv
+memacc.sv
+muxw.sv
 WB.sv>
 
 ### RTL Snapshot
