@@ -5,10 +5,7 @@ Write a SV program for Memory Access & Writeback Stage,
 Write a SV program for Data memory>
 
 ### Name of file:
-<MA.sv
-memacc.sv
-muxw.sv
-WB.sv>
+<MA.sv,memacc.sv,muxw.sv,WB.sv>
 
 ### RTL Snapshot
 ![Screenshot of RTL view, full screen](<MA.png, WB.png>)
