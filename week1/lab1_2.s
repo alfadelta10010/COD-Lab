@@ -1,36 +1,18 @@
-    .data
-a: .word 0x80000112, 0x9123456C
-b: .half 0x8002, 0x456A
-c: .byte 0x82, 0x6A
-
-    .text
-    la x10, a
-    lw x2, 0(x10)
-    lw x3, 4(x10)
-    add x14, x13, x12
-    sw x14, 8(x10)
-
-    la x11, b
-   lh x12, 0(x1)
-    lh x13, 2(x1)
-    add x14, x13, x12
-    sh x14, 4(x10)
-
-    la x11, c
-    lb x12, 0(x10)
-    lb x13, 1(x10)
-    add x14, x13, x12
-    sb x14, 2(x10)
-    la x10, b
-    lhu x12, 0(x1)
-    lhu x13, 2(x1)
-    add x14, x13, x12
-    shu x14, 4(x10)
-
-    la x11, c
-    lbu x12, 0(x10)
-    lbu x13, 1(x10)
-    add x14, x13, x12
-    sbu x14, 2(x10)
-
-
+.data
+n:.dword 0x9379316688748371, 0x8660282002
+result:.dword 0, 0 
+.text
+la x4,n
+lw x10,0(x4)
+lw x11,4(x4)
+lw x12,8(x4)
+lw x13,12(x4)
+add x14,x10,x12
+sltu x15,x14,x10
+add x16,x11,x13
+sltu x17,x16,x11
+add x16,x16,x15
+la x21,result
+sw x14,0(x21)
+sw x16,4(x21)
+sw x17,8(x21)
