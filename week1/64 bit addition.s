@@ -13,9 +13,10 @@ lw x13, 12(x4)     # Load fourth 32-bit word into x13 (higher part of second num
 add x14, x10, x12  # Add lower parts
 sltu x15, x14, x10 # Check for carry (unsigned comparison)
 add x16, x11, x13  # Add higher parts
-add x16, x16, x15  # Add carry to higher parts
-
+add x17, x16, x15  # Add carry to higher parts
+sltu x18,x17,x16
 # Store results
 la x21, result     # Load address of 'result'
 sw x14, 0(x21)     # Store lower part of the result
-sw x16, 4(x21)     # Store higher part of the result
+sw x17, 4(x21)     # Store higher part of the result
+sw x18, 8(x21)
