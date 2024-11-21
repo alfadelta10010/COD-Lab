@@ -4,7 +4,7 @@ n:       .word 5              # Number of elements in the array
 
 .text
     la x10, array             # x10 = Address of array
-    lw x11, n                 # x11 = Number of elements (N)
+    la x11, n                 # x11 = Number of elements (N)
     li x12, 0                 # x12 = i (outer loop counter)
 outer_loop:
     sub x13, x11, x12         # x13 = N - i
