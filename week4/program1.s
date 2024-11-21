@@ -17,7 +17,6 @@ strcpy:
     addi sp,sp,-4
     sw x25,0(sp)           
     add x25,x0,x0
-jal x1,func
 func:
     bne x6,x5,exit
     bne x7,x31,exit
